@@ -1,7 +1,7 @@
 'use strict';
 
 bible2012App
-.directive('menu', function($log, $location, config, utilities) {
+.directive('menu', function($log, $location, config, utilities, $rootScope) {
     return {
         restrict: 'A',
         template: '<ul ng-transclude><li ng-repeat="i in menuItems" ng-class="{on:i==selected}" id="sectionC_menu_{{i}}"><a ng-click="click(i)"><span></span>{{i}}</a></li></ul>',
@@ -14,6 +14,7 @@ bible2012App
                 switch(config.currentMenuPane) {
                 case 'reading-plan': $location.path('/reading-plan/' + config.planId + '/' + config.day); break;
                 case 'bible': $location.path('/bible/' + utilities.getVersionKeyFromNumber(config.version) + '/' + config.book + '/' + config.sc); break;
+                case 'comment': $rootScope.$broadcast('commentButtonClicked');
             }});
         }
     };

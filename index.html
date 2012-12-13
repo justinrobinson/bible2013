@@ -70,7 +70,11 @@
                     <div audio-player></div>
                 </div>
                 <div pane title='share'></div>
-                <div pane title='comment'></div>
+                <div pane title='comment'>
+                    <div ng-controller='CommentsCtrl'>
+                        <div ng-model='comments' ng-repeat='comment in comments'><span ng-bind-html-unsafe='comment.comment_text'></span></div> 
+                    </div>
+                </div>
                 <div pane title='resources'></div>
             </div>
         </div>
@@ -95,6 +99,7 @@
 <script src="scripts/controller.app.js"></script>
 <script src="scripts/controller.bible.js"></script>
 <script src='scripts/controller.bibleVersions.js'></script>
+<script src='scripts/controller.comments.js'></script>
 <script src='scripts/controller.loading.js'></script>
 <script src="scripts/controller.main.js"></script>
 <script src='scripts/controller.menu.js'></script>
