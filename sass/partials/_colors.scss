@@ -1,0 +1,118 @@
+$white: #ffffff;
+$grey: #b2b0ac;
+$light-grey: #cac4bc;
+$dark-grey: #6f6366;
+$medium-grey: #b7acac;
+$smoke-grey: #9e9693;
+// text elements
+h1, h3, h4, p, li, .label{
+    color:$dark-grey
+}
+h2, .h2 {
+    color:$dark-grey
+}
+.icon, .input {
+    color:$grey
+}
+.button {
+    color:$white
+}
+.copyright {
+    color:$smoke-grey
+}
+.passage-copyright {
+    color:$light-grey
+}
+// layout elements
+// override twitter bootstrap colors
+/*.navbar {
+    margin-bottom:0;
+    .nav {
+        li {
+            a {
+                color:#fff;
+                text-shadow:none
+            }
+        }
+    }
+}*/
+#sectionB {
+	input {
+		background:transparent;
+		color:#000;
+		border:0;
+		font-size:15px;
+        color:$white;
+        margin-left:10px;
+	}
+}
+#sectionC {
+    .panes {
+        .pane {
+            &#search_pane {
+                a {
+                    color:$dark-grey;
+                }
+            }
+        }
+    }
+}
+#sectionD {
+    #passage {
+        blockquote {
+            small {
+                color:$dark-grey;
+            }
+        }
+    }
+}
+.navbar-inner {
+	background:transparent;
+	border:0;
+	height:37px;
+    min-height:37px;
+	.nav {
+		height:37px;
+		li {
+			height:37px;
+			a {
+				&.dropdown-toggle.ng-binding {
+					height:15px !important;
+				}
+			}
+		}
+	}
+}
+
+li {
+    &.dropdown {
+        a {
+            text-shadow:none!important;
+            &.dropdown-toggle {
+                color:#fff;
+                &:hover {
+                    border-top-color:#555!important;
+                    border-bottom-color:#555!important;
+                    .caret {
+                        border-top-color:#555!important;
+                        border-bottom-color:#555!important
+                    }
+                }
+            }
+            .caret {
+                border-top-color:#fff!important;
+                border-bottom-color:#fff!important
+            }
+            ul {
+                &.dropdown-menu {
+                    border:solid 20px #555;
+                    li {
+                        a {
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@mixin a-button {
+    display:block;
+    text-indent:-3000em;
+    overflow:hidden;
+}
+#sectionD_try_apps_ul_app_store a {
+    @include a-button;
+    width:201px;
+    height:58px;
+    background:url(../img/sprites.png) no-repeat -268px -489px;
+}
+#sectionD_try_apps_ul_google_play a {
+    @include a-button;
+    width:172px;
+    height:59px;
+    background:url(../img/sprites.png) no-repeat -268px -547px;
+}

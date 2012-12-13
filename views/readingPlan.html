@@ -1,0 +1,35 @@
+<div id='sectionB'>
+    <div class='navbar'>
+        <div class='navbar-inner'>
+            <div class='container'>
+                <input ui-date ng-change='change()' ng-model='date' class='nav' />
+                <ul class='nav'> 
+                    <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{plan}} <b class='caret'></b></a>
+                        <ul class='dropdown-menu' ng-model='plans'><li ng-repeat='plan in plans'><a href ng-click='planClick($index)'>{{plan}}</a></li></ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href id='previous' ng-click='previous()'>Previous</a>
+                </li>
+                <li>
+                    <a href id='next' ng-click='next()'>Next</a></div>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div id='sectionD'>
+    <h1>Reading Plan</h1>
+    <h2>{{DevotionTitle}}</h2>
+    <span><a href='{{DevotionURL}}'>Link to: {{DevotionTitle}}</a></span>
+    <span ng-repeat='r in result'>
+        <span ng-repeat='v in r'>
+            <h2>{{v.title}}</h2>
+            <span ng-repeat='p in v.passage'>
+                <sup>{{p.Verse}}</sup> <span ng-bind-html-unsafe='p.VerseText'></span>
+            </span>
+        </span>
+    </span>
+</div>

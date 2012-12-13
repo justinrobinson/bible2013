@@ -1,0 +1,51 @@
+@import 'compass/css3';
+$font-path: '../../bible2013/fonts/';
+$lgr: $font-path + 'League_Gothic-webfont';
+$pnb: $font-path + 'ProximaNova-Bold-webfont';
+$pnr: $font-path + 'ProximaNova-Reg-webfont';
+
+@include font-face('lgr', font-files($lgr + '.ttf', $lgr + '.otf', $lgr + '.eot', $lgr + '.svg'));
+@include font-face('pnb', font-files($pnb + '.ttf', $pnb + '.otf', $pnb + '.eot', $pnb + '.svg'));
+@include font-face('pnr', font-files($pnr + '.ttf', $pnr + '.otf', $pnr + '.eot', $pnr + '.svg'));
+h1, .button {
+  font-family:'lgr';
+  font-size:48px;
+  text-transform:uppercase;
+  a { text-decoration:none; }
+}
+h2, .h2, h3, h4, p, li, strong {
+  font-family:'pnb';
+}
+p, label, input, li, .icon, .label, .input, .copyright, .passage-copyright {
+  font-family:'pnr';
+}
+h2, .h2 {
+  font-size:24px;
+  text-transform:uppercase;
+}
+h3, .input, input{
+  font-size:18px;
+}
+h4 {
+  font-size:12px;
+}
+p, input, label {
+  line-height:28px;
+}
+.icon, .button{
+  font-size:24px;
+  text-decoration:none;
+}
+p, .label {
+  font-size:14px;
+}
+.copyright, .passage-copyright{
+  font-size:10px
+}
+// Override jquery ui styles
+.ui-widget {
+    input { font-family:'pnr' !important; }
+    select { font-family:'pnr' !important; }
+    textarea { font-family:'pnr' !important; }
+    button { font-family:'pnr' !important; }
+}

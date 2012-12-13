@@ -1,0 +1,44 @@
+<div id='sectionB'>
+    <div class='navbar'>
+        <div class='navbar-inner'>
+            <div class='container'>
+                <ul class='nav'>
+                    <li class='dropdown' ng-controller='BibleVersionsCtrl'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{versionName}} <b class='caret'></b></a>
+                        <ul class='dropdown-menu' ng-model='versions'>
+                            <li ng-repeat='version in versions'><a href ng-click='versionClick($index)' data-value='{{version.versionkey}}'>{{version.name}}</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{book|getBookNameFromNumber}} <b class='caret'></b></a>
+                        <ul class='dropdown-menu' ng-model='books'>
+                            <li ng-repeat='b in books'><a href ng-click='bookClick($index)'>{{b}}</a></li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{sc}} <b class='caret'></b></a>
+                        <ul class='dropdown-menu' ng-model='chapters'>
+                            <li ng-repeat='chapter in chapters'><a href ng-click='chapterClick($index)'>{{chapter}}</a></li>
+                        </ul>
+                    </li>
+                    <!--<li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{sv}} <b class='caret'></b></a>
+                        <ul class='dropdown-menu' ng-model='verses'>
+                            <li ng-repeat='verse in verses'><a href ng-click='verseClick($index)'>{{verse}}</a></li>
+                        </ul>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id='sectionD'>
+    <div id='passage_pager_previous'> <a href ng-click='previousChapterClick()'><span></span>Previous</a></div>
+    <div id='passage'>
+        <h1>{{book|getBookNameFromNumber}} {{sc}}</h1>
+        <span ng-repeat='verse in passage' ng-class='{on:verse.Verse==sv||verse.Verse<=ev}'><sup ng-bind='verse.Verse'></sup><span ng-bind-html-unsafe='verse.VerseText'></span></span><!-- using ng-bind-html-unsafe to escape HTML markup sent in the json data -->
+        <span ng-bind-html-unsafe='copyright'></span>
+        <div id='passage_pager_next'><a href ng-click='nextChapterClick()'><span></span>Next</a>
+        </div>
+    </div>
+    <div class='push'></div>
+</div>
