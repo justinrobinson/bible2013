@@ -3003,12 +3003,12 @@ table .span24 {
   display: none;
   float: left;
   min-width: 160px;
-  padding: 5px 0;
+  padding: 0;
   margin: 2px 0 0;
   list-style: none;
   background-color: white;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 10px solid #ccc;
+  border: 10px solid rgba(0, 0, 0, 0.2);
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   -webkit-border-radius: 6px;
@@ -3020,13 +3020,15 @@ table .span24 {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+  max-height: 300px;
+  overflow-y: scroll;
 }
-/* line 64, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 65, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
-/* line 70, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 71, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
@@ -3036,7 +3038,7 @@ table .span24 {
   background-color: #e5e5e5;
   border-bottom: 1px solid white;
 }
-/* line 75, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 76, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu a {
   display: block;
   padding: 3px 20px;
@@ -3047,7 +3049,7 @@ table .span24 {
   white-space: nowrap;
 }
 
-/* line 90, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 91, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
@@ -3055,7 +3057,7 @@ table .span24 {
   background-color: #e5e5e5;
 }
 
-/* line 101, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 102, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: white;
@@ -3072,42 +3074,42 @@ table .span24 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
 
-/* line 113, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 114, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
   color: #999999;
 }
 
-/* line 117, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 118, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .disabled > a:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
 }
 
-/* line 125, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 126, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .open {
   *z-index: 1000;
 }
-/* line 130, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 131, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .open > .dropdown-menu {
   display: block;
 }
 
-/* line 137, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 138, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
 
-/* line 149, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 150, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px solid black;
   content: "\2191";
 }
-/* line 155, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 156, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
@@ -3115,12 +3117,12 @@ table .span24 {
   margin-bottom: 1px;
 }
 
-/* line 164, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 165, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 167, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 168, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -3131,12 +3133,12 @@ table .span24 {
   border-radius: 0 6px 6px 6px;
 }
 
-/* line 176, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 177, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu:hover .dropdown-menu {
   display: block;
 }
 
-/* line 180, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 181, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -3151,18 +3153,18 @@ table .span24 {
   margin-right: -10px;
 }
 
-/* line 193, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 194, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: white;
 }
 
-/* line 201, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 202, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown .dropdown-menu .nav-header {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 208, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 209, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .typeahead {
   margin-top: 2px;
   -webkit-border-radius: 4px;
@@ -4790,23 +4792,23 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > .dropdown-menu:before {
   content: '';
   display: inline-block;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #ccc;
+  border-left: 27px solid transparent;
+  border-right: 27px solid transparent !important;
+  border-bottom: 27px solid #ccc !important;
   border-bottom-color: rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: -7px;
-  left: 9px;
+  top: -27px;
+  left: 0px;
 }
 /* line 303, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav > li > .dropdown-menu:after {
   content: '';
   display: inline-block;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid white;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid white;
   position: absolute;
-  top: -6px;
+  top: -16px;
   left: 10px;
 }
 
@@ -8509,39 +8511,49 @@ h2, .h2 {
 .navbar-inner .nav li {
   height: 37px;
 }
-/* line 79, ../sass/partials/_colors.scss */
-.navbar-inner .nav li a.dropdown-toggle.ng-binding {
-  height: 15px !important;
+/* line 78, ../sass/partials/_colors.scss */
+.navbar-inner .nav li a {
+  height: 37px;
+  line-height: 37px;
+}
+/* line 81, ../sass/partials/_colors.scss */
+.navbar-inner .nav li a.dropdown-toggle {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 84, ../sass/partials/_colors.scss */
+.navbar-inner .nav li a.dropdown-toggle b.caret {
+  margin-top: 15px;
 }
 
-/* line 89, ../sass/partials/_colors.scss */
+/* line 95, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 91, ../sass/partials/_colors.scss */
+/* line 97, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 93, ../sass/partials/_colors.scss */
+/* line 99, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
   border-top-color: #555!important;
   border-bottom-color: #555!important;
 }
-/* line 96, ../sass/partials/_colors.scss */
+/* line 102, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover .caret {
   border-top-color: #555!important;
   border-bottom-color: #555555 !important;
 }
-/* line 102, ../sass/partials/_colors.scss */
+/* line 108, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 107, ../sass/partials/_colors.scss */
+/* line 113, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 110, ../sass/partials/_colors.scss */
+/* line 116, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }
@@ -9140,39 +9152,49 @@ h2, .h2 {
 .navbar-inner .nav li {
   height: 37px;
 }
-/* line 79, ../sass/partials/_colors.scss */
-.navbar-inner .nav li a.dropdown-toggle.ng-binding {
-  height: 15px !important;
+/* line 78, ../sass/partials/_colors.scss */
+.navbar-inner .nav li a {
+  height: 37px;
+  line-height: 37px;
+}
+/* line 81, ../sass/partials/_colors.scss */
+.navbar-inner .nav li a.dropdown-toggle {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 84, ../sass/partials/_colors.scss */
+.navbar-inner .nav li a.dropdown-toggle b.caret {
+  margin-top: 15px;
 }
 
-/* line 89, ../sass/partials/_colors.scss */
+/* line 95, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 91, ../sass/partials/_colors.scss */
+/* line 97, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 93, ../sass/partials/_colors.scss */
+/* line 99, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
   border-top-color: #555!important;
   border-bottom-color: #555!important;
 }
-/* line 96, ../sass/partials/_colors.scss */
+/* line 102, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover .caret {
   border-top-color: #555!important;
   border-bottom-color: #555555 !important;
 }
-/* line 102, ../sass/partials/_colors.scss */
+/* line 108, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 107, ../sass/partials/_colors.scss */
+/* line 113, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 110, ../sass/partials/_colors.scss */
+/* line 116, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }

@@ -76,8 +76,14 @@ h2, .h2 {
 		li {
 			height:37px;
 			a {
-				&.dropdown-toggle.ng-binding {
-					height:15px !important;
+                height:37px;
+                line-height:37px;
+				&.dropdown-toggle {
+                    padding-top:0;
+                    padding-bottom:0;
+                    b.caret {
+                        margin-top:15px;
+                    }
 				}
 			}
 		}
