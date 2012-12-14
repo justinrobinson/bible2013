@@ -83,7 +83,31 @@ body {
         position:fixed;
     }
     input {
-        cursor:pointer
+        cursor:pointer;
+        width:90px;
+        text-transform:uppercase;
+    }
+    .navbar-inner {
+        li {
+            a#previous,
+            a#next {
+                position:absolute;
+                top:10px;
+                left:500px;
+                display:block;
+                width:8px;
+                height:16px;
+                text-indent:-3000em;
+                overflow:hidden;
+            }
+            a#previous {
+                background:url(../img/sprites.png) no-repeat -214px 0;
+            }
+            a#next {
+                left:530px;
+                background:url(../img/sprites.png) no-repeat -224px 0;
+            }
+        }
     }
 }
 #wrapper #sectionB #sign_up {
@@ -120,15 +144,46 @@ body {
     #sectionC {
         .panes {
             .pane {
-                h3, p {
+                h2 {
+                    margin-bottom:20px
+                }
+                h3 {
+                    margin-top:15px;
+                    clear:both;
+                    float:none;
+                }
+                h3, h4, p {
                     margin:0 20px;
                     line-height:20px;
                 }
+                p {
+                    margin-top:5px
+                }
+                h4 {
+                    line-height:10px;
+                    margin-bottom:5px;
+                }
                 &#search_pane {
+                    display:none
+                }
+                &#search_pane,
+                &#comment_pane {
                     h3 {
-                        margin-top:15px;
+                    }
+                    a {
+                        .profile_img {
+                            display:block;
+                            width:40px;
+                            height:40px;
+                            float:left;
+                            margin:0 30px 35px 0;
+                        }
                     }
                     p {
+                        clear:both;
+                        float:none;
+                        margin:20px;
+                        margin-top:5px;
                         &#searchedFor {
                             margin-top:20px;
                         }
