@@ -1,0 +1,8 @@
+<div ng-controller='CommentsCtrl'>
+    <span ng-model='comments' ng-repeat='comment in comments'>
+        <h3>{{comment.display_name}}</h3><h4>{{comment.friendly_time}}</h4>
+        <p>
+            {{comment.comment_text}}
+            <!--<a class='profile_img' href='comment.profile_link'><img src='{{comment.profile_img_src}}'/></a>--></p>
+    </span> 
+</div>

@@ -51,7 +51,8 @@
   list-style: none;
   background-color: $dropdownBackground;
   border: 10px solid #ccc; // Fallback for IE7-8
-  border: 10px solid $dropdownBorder;
+  //border: 10px solid $dropdownBorder;
+  border: 10px solid #ccc;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   @include border-radius(6px);

@@ -63,8 +63,30 @@
                     </div>
                 </div>
                 <div pane title='reading-plan'>
-                
-                
+                    <div audio-player></div>
+                    <hr/>
+                    <div ng-controller='CommentsCtrl'>
+                        <p class='clear'>
+                        <div class='pager btn-group'>
+                            <button class='btn' ng-click='previous()'>Previous</button>
+                            <button class='btn' ng-click='next()'>Next</button>
+                        </div>
+                    </p>
+                        <span ng-model='comments' ng-repeat='comment in comments'>
+                            <h3>{{comment.display_name}}</h3><h4>{{comment.friendly_time}}</h4>
+                            <p>
+                                {{comment.comment_text}}
+                                <!--<a class='profile_img' href='comment.profile_link'><img src='{{comment.profile_img_src}}'/></a>--></p>
+                            <hr/>
+                        </span> 
+                        <p class='clear'>
+                        <div class='pager btn-group'>
+                            <button class='btn' ng-click='previous()'>Previous</button>
+                            <button class='btn' ng-click='next()'>Next</button>
+                        </div>
+                    </p>
+
+                    </div>
                 </div>
                 <div pane title='audio'>
                     <div audio-player></div>
@@ -72,13 +94,26 @@
                 <div pane title='share'></div>
                 <div pane title='comment'>
                     <div ng-controller='CommentsCtrl'>
+                        <p class='clear'>
+                        <div class='pager btn-group'>
+                            <button class='btn' ng-click='previous()'>Previous</button>
+                            <button class='btn' ng-click='next()'>Next</button>
+                        </div>
+                    </p>
+                        <hr/>
                         <span ng-model='comments' ng-repeat='comment in comments'>
                             <h3>{{comment.display_name}}</h3><h4>{{comment.friendly_time}}</h4>
                             <p>
-                            {{comment.comment_text}}
-                            <!--<a class='profile_img' href='comment.profile_link'><img src='{{comment.profile_img_src}}'/></a>--></p>
+                                {{comment.comment_text}}
+                                <!--<a class='profile_img' href='comment.profile_link'><img src='{{comment.profile_img_src}}'/></a>--></p>
+                            <hr/>
                         </span> 
-                    </div>
+                        <p class='clear'>
+                        <div class='pager btn-group'>
+                            <button class='btn' ng-click='previous()'>Previous</button>
+                            <button class='btn' ng-click='next()'>Next</button>
+                        </div>
+                    </p>                    </div>
                 </div>
                 <div pane title='resources'></div>
             </div>

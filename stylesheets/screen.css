@@ -2239,7 +2239,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/images/glyphicons-halflings.png');
+  background-image: url('/images/glyphicons-halflings.png?1355430601');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2254,7 +2254,7 @@ table .span24 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/images/glyphicons-halflings-white.png');
+  background-image: url('/images/glyphicons-halflings-white.png?1355430618');
 }
 
 /* line 42, ../sass/compass_twitter_bootstrap/_sprites.scss */
@@ -3008,7 +3008,7 @@ table .span24 {
   list-style: none;
   background-color: white;
   border: 10px solid #ccc;
-  border: 10px solid rgba(0, 0, 0, 0.2);
+  border: 10px solid #ccc;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   -webkit-border-radius: 6px;
@@ -3023,12 +3023,12 @@ table .span24 {
   max-height: 300px;
   overflow-y: scroll;
 }
-/* line 65, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 66, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
-/* line 71, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 72, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
@@ -3038,7 +3038,7 @@ table .span24 {
   background-color: #e5e5e5;
   border-bottom: 1px solid white;
 }
-/* line 76, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 77, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu a {
   display: block;
   padding: 3px 20px;
@@ -3049,7 +3049,7 @@ table .span24 {
   white-space: nowrap;
 }
 
-/* line 91, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 92, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
@@ -3057,7 +3057,7 @@ table .span24 {
   background-color: #e5e5e5;
 }
 
-/* line 102, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 103, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: white;
@@ -3074,42 +3074,42 @@ table .span24 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
 
-/* line 114, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 115, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
   color: #999999;
 }
 
-/* line 118, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 119, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .disabled > a:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
 }
 
-/* line 126, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 127, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .open {
   *z-index: 1000;
 }
-/* line 131, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 132, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .open > .dropdown-menu {
   display: block;
 }
 
-/* line 138, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 139, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
 
-/* line 150, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 151, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px solid black;
   content: "\2191";
 }
-/* line 156, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 157, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
@@ -3117,12 +3117,12 @@ table .span24 {
   margin-bottom: 1px;
 }
 
-/* line 165, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 166, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 168, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 169, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -3133,12 +3133,12 @@ table .span24 {
   border-radius: 0 6px 6px 6px;
 }
 
-/* line 177, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 178, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu:hover .dropdown-menu {
   display: block;
 }
 
-/* line 181, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 182, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -3153,18 +3153,18 @@ table .span24 {
   margin-right: -10px;
 }
 
-/* line 194, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 195, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: white;
 }
 
-/* line 202, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 203, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown .dropdown-menu .nav-header {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 209, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 210, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .typeahead {
   margin-top: 2px;
   -webkit-border-radius: 4px;
@@ -4812,7 +4812,43 @@ input[type="submit"].btn.btn-mini {
   left: 10px;
 }
 
-/* line 316, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 315, ../sass/compass_twitter_bootstrap/_navbar.scss */
+a.dropdown-toggle::before {
+  content: '';
+  display: inline-block;
+  border-left: 27px solid transparent;
+  border-right: 27px solid transparent;
+  border-bottom: 27px solid #CCC;
+  border-bottom-color: #ccc;
+  position: absolute;
+  bottom: -10px;
+  right: 50%;
+  margin-right: -22px;
+  display: none;
+}
+
+/* line 329, ../sass/compass_twitter_bootstrap/_navbar.scss */
+a.dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid white;
+  position: absolute;
+  bottom: -12px;
+  right: 50%;
+  margin-right: -12px;
+  z-index: 1001;
+  display: none;
+}
+
+/* line 343, ../sass/compass_twitter_bootstrap/_navbar.scss */
+.open > a.dropdown-toggle::before,
+.open > a.dropdown-toggle::after {
+  display: block;
+}
+
+/* line 348, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .dropdown-menu:before {
   border-top: 7px solid #ccc;
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -4820,7 +4856,7 @@ input[type="submit"].btn.btn-mini {
   bottom: -7px;
   top: auto;
 }
-/* line 323, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 355, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .dropdown-menu:after {
   border-top: 6px solid white;
   border-bottom: 0;
@@ -4828,7 +4864,7 @@ input[type="submit"].btn.btn-mini {
   top: auto;
 }
 
-/* line 334, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 366, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
@@ -4836,13 +4872,13 @@ input[type="submit"].btn.btn-mini {
   color: #555555;
 }
 
-/* line 338, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 370, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #555555;
   border-bottom-color: #555555;
 }
 
-/* line 344, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 376, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
@@ -4850,25 +4886,25 @@ input[type="submit"].btn.btn-mini {
   border-bottom-color: #555555;
 }
 
-/* line 351, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 383, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
-/* line 354, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 386, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu:before,
 .navbar .nav > li > .dropdown-menu.pull-right:before {
   left: auto;
   right: 12px;
 }
-/* line 358, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 390, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu:after,
 .navbar .nav > li > .dropdown-menu.pull-right:after {
   left: auto;
   right: 13px;
 }
-/* line 362, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 394, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
   left: auto;
@@ -4880,11 +4916,11 @@ input[type="submit"].btn.btn-mini {
   border-radius: 6px 0 6px 6px;
 }
 
-/* line 375, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 407, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse {
   color: #999999;
 }
-/* line 378, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 410, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-inner {
   background-color: #1b1b1b;
   background-image: -moz-linear-gradient(top, #222222, #111111);
@@ -4896,63 +4932,63 @@ input[type="submit"].btn.btn-mini {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f1f1f', endColorstr='#0e0e0e', GradientType=0);
   border-color: #252525;
 }
-/* line 384, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 416, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   color: #999999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 387, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 419, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover {
   color: white;
 }
-/* line 393, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 425, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
   background-color: transparent;
   color: white;
 }
-/* line 400, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 432, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   color: white;
   background-color: #111111;
 }
-/* line 406, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 438, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link {
   color: #999999;
 }
-/* line 408, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 440, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link:hover {
   color: white;
 }
-/* line 414, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 446, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .divider-vertical {
   border-left-color: #111111;
   border-right-color: #222222;
 }
-/* line 422, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 454, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #111111;
   color: white;
 }
-/* line 426, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 458, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #999999;
   border-bottom-color: #999999;
 }
-/* line 432, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 464, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
-/* line 439, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 471, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-search .search-query {
   color: white;
   background-color: #515151;
@@ -4977,7 +5013,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .navbar-search .search-query::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 449, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 481, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-search .search-query:focus, .navbar-inverse .navbar-search .search-query.focused {
   padding: 5px 15px;
   color: #333333;
@@ -4989,7 +5025,7 @@ input[type="submit"].btn.btn-mini {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   outline: 0;
 }
-/* line 462, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 494, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .btn-navbar {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -8866,7 +8902,7 @@ body {
   position: relative;
   background: #fff;
   border-left: solid 1px #d1caca;
-  min-height: 100%;
+  min-height: 600px;
 }
 /* line 276, ../sass/partials/_layout.scss */
 #wrapper #sectionD h1 {

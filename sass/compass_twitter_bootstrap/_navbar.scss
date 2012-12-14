@@ -311,6 +311,38 @@
     left: 10px;
   }
 }
+// Move Arrow as overflow-y: causes it to disappear
+a.dropdown-toggle::before {
+	content: '';
+	display: inline-block;
+	border-left: 27px solid transparent;
+	border-right: 27px solid transparent;
+	border-bottom: 27px solid #CCC;
+	//border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color:#ccc;
+	position: absolute;
+	bottom: -10px;
+	right: 50%;;
+    margin-right:-22px;
+	display: none;
+}
+a.dropdown-toggle::after {
+	content: '';
+	display: inline-block;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-bottom: 16px solid white;
+	position: absolute;
+	bottom: -12px;
+	right: 50%;
+    margin-right:-12px;
+	z-index: 1001;
+	display: none;
+}
+.open > a.dropdown-toggle::before,
+.open > a.dropdown-toggle::after {
+	display: block;
+}
 // Menu position and menu caret support for dropups via extra dropup class
 .navbar-fixed-bottom .dropdown-menu {
   &:before {
