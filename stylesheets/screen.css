@@ -9396,8 +9396,8 @@ li.dropdown a ul.dropdown-menu li a {
 }
 
 /* line 1, ../sass/partials/_audioPlayer.scss */
-#jp_container_1 {
-  margin: 65px 0 0 45px;
+.jp-audio {
+  margin: 45px 0 0 45px;
 }
 
 /* Pretty printing styles. Used with prettify.js. */

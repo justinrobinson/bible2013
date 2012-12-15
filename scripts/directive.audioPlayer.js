@@ -3,6 +3,10 @@
 bible2012App.directive('audioPlayer', function($log, $filter, config) {
     return {
         restrict: 'A',
+        transclude: true,
+        scope: {
+            id: "@"
+        },
         templateUrl: 'views/audioPlayer.html',
         controller: function($scope, $element, $attrs) {
             $scope.prepareTracks = function(data) {
@@ -27,22 +31,23 @@ bible2012App.directive('audioPlayer', function($log, $filter, config) {
             }
         },
         link: function(scope, element, attrs) {
+            $log.log('link:', scope, element, attrs);
             function updatePlayer(data) {
-                var player = '#jquery_jplayer_1',
-                    cssSelector = '#jp_container_1',
+                var player = '#jquery_jplayer_' + attrs.id,
+                    cssSelector = '#jp_container_' + attrs.id,
                     supplied = 'mp3',
                     wmode = 'window';
 
                 $(player).jPlayer('destroy');
 
-                new jPlayerPlaylist(
+                player.playlist = new jPlayerPlaylist(
                     {
                         jPlayer: player,
                         cssSelectorAncestor: cssSelector
                     },
                     scope.prepareTracks(data), 
                     {
-                        swfPath: '/bible2013/app/swf/',
+                        swfPath: '../swf/',
                         supplied: supplied,
                         wmode: wmode
                     }

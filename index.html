@@ -36,7 +36,7 @@
 <script src="scripts/vendor/json3.min.js"></script>
 <![endif]-->
 
-<div id='loader' ng-controller='LoadingCtrl'><span ng-show='loading'>Loading</span></div>
+<!--<div id='loader' ng-controller='LoadingCtrl'><span ng-show='loading'>Loading</span></div>-->
 <div id='wrapper'>
     <div id='sectionA'>
         <div id='logo'><h1><a href='/'>Community Bible</a></h1></div>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div pane title='reading-plan'>
-                    <div audio-player></div>
+                    <div audio-player id='audioPlayer2' class='audioPlayer'></div>
                     <hr/>
                     <div ng-controller='CommentsCtrl'>
                         <p class='clear'>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div pane title='audio'>
-                    <div audio-player></div>
+                    <div audio-player id='audioPlayer1' class='audioPlayer'></div>
                 </div>
                 <div pane title='share'></div>
                 <div pane title='comment'>
@@ -135,7 +135,7 @@
 
 <!-- build:js scripts/scripts.js -->
 <script src="scripts/app.js"></script>
-
+<script src='scripts/module.loader.js'></script>
 <script src="scripts/controller.app.js"></script>
 <script src="scripts/controller.bible.js"></script>
 <script src='scripts/controller.bibleVersions.js'></script>
