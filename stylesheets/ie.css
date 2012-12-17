@@ -4,36 +4,35 @@
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
 /* line 7, ../sass/ie.scss */
-.lt-ie8 ul#sectionC_menu {
-  /*li {
-      a {
-          span {
-              background-position:-100px -300px !important;
-          }
-      }
-  }*/
+.lt-ie8 #sectionC {
+  height: 500px;
 }
-/* line 15, ../sass/ie.scss */
-.lt-ie8 ul#sectionC_menu li#sectionC_menu_bible a span {
-  background-position: -232px 0px !important;
+/* line 10, ../sass/ie.scss */
+.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_bible a span {
+  background: red !important;
 }
-/* line 16, ../sass/ie.scss */
-.lt-ie8 ul#sectionC_menu li#sectionC_menu_reading-plan a span {
+/* line 11, ../sass/ie.scss */
+.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan a span {
   background-position: -309px 0px !important;
 }
-/* line 17, ../sass/ie.scss */
-.lt-ie8 ul#sectionC_menu li#sectionC_menu_audio a span {
+/* line 12, ../sass/ie.scss */
+.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_audio a span {
   background-position: -386px 0px !important;
 }
-/* line 18, ../sass/ie.scss */
-.lt-ie8 ul#sectionC_menu li#sectionC_menu_share a span {
+/* line 13, ../sass/ie.scss */
+.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_share a span {
   background-position: -463px 0px !important;
 }
-/* line 19, ../sass/ie.scss */
-.lt-ie8 ul#sectionC_menu li#sectionC_menu_comment a span {
+/* line 14, ../sass/ie.scss */
+.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_comment a span {
   background-position: -540px 0px !important;
 }
-/* line 20, ../sass/ie.scss */
-.lt-ie8 ul#sectionC_menu li#sectionC_menu_resources a span {
+/* line 15, ../sass/ie.scss */
+.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_resources a span {
   background-position: -617px 0px !important;
+}
+
+/* line 19, ../sass/ie.scss */
+.hidden {
+  display: none !important;
 }

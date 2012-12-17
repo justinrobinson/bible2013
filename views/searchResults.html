@@ -1,0 +1,6 @@
+<div ng-controller='SearchResultsCtrl'>
+    <p class='clear' id='searchedFor'>You searched for: "{{results.search_terms}}"</p>
+    <span ng-repeat='result in results.search_results'>
+        <h3>{{result.book|getBookNameFromNumber}} {{result.chapter}}:{{result.verse}} ({{result.version}})</h3>
+        <p><a href="#/bible/{{result.version}}/{{result.book}}/{{result.chapter}}"><span ng-bind-html-unsafe='result.raw_text'></span></a></p></span>
+</div>

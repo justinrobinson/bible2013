@@ -5,14 +5,20 @@ bible2012App.controller('CommentsCtrl', function($http, $scope, $rootScope, $log
     $scope.commentCount = 100;
     $scope.previous = function() {
         if ($scope.pageNumber != 1) {
+            $scope.nextEnabled = true;
             $scope.pageNumber = Number($scope.pageNumber) - 1;
             $scope.load();
+        } else {
+            $scope.nextEnabled = false;
         }
     };
     $scope.next = function() {
         if ($scope.pageNumber * 10 < $scope.commentCount) {
+            $scope.previousEnabled = true;
             $scope.pageNumber = Number($scope.pageNumber) + 1;
             $scope.load();
+        } else {
+            $scope.nextEnabled = false;
         }
     };
     $scope.$on('commentButtonClicked', function() {
@@ -35,6 +41,16 @@ bible2012App.controller('CommentsCtrl', function($http, $scope, $rootScope, $log
             if (data.article.comments.length > 0) {
                 $scope.commentCount = data.article.comment_count;
                 $scope.comments = data.article.comments;
+                if ($scope.pageNumber == 1) {
+                    $scope.previousEnabled = false;
+                } else {
+                    $scope.previousEnabled = true;
+                }
+                if ($scope.pageNumber * 10 < $scope.commentCount) {
+                    $scope.nextEnabled = true;
+                } else {
+                    $scope.nextEnabled = false;
+                }
             }
         });
     };

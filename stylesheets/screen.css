@@ -8471,32 +8471,32 @@ body .ui-tooltip {
   border-radius: 8px;
 }
 
-/* line 8, ../sass/partials/_colors.scss */
+/* line 9, ../sass/partials/_colors.scss */
 h1, h3, h4, p, li, .label {
   color: #6f6366;
 }
 
-/* line 11, ../sass/partials/_colors.scss */
+/* line 12, ../sass/partials/_colors.scss */
 h2, .h2 {
   color: #6f6366;
 }
 
-/* line 14, ../sass/partials/_colors.scss */
+/* line 15, ../sass/partials/_colors.scss */
 .icon, .input {
   color: #b2b0ac;
 }
 
-/* line 17, ../sass/partials/_colors.scss */
+/* line 18, ../sass/partials/_colors.scss */
 .button {
   color: white;
 }
 
-/* line 20, ../sass/partials/_colors.scss */
+/* line 21, ../sass/partials/_colors.scss */
 .copyright {
   color: #9e9693;
 }
 
-/* line 23, ../sass/partials/_colors.scss */
+/* line 24, ../sass/partials/_colors.scss */
 .passage-copyright {
   color: #cac4bc;
 }
@@ -8512,7 +8512,7 @@ h2, .h2 {
         }
     }
 }*/
-/* line 40, ../sass/partials/_colors.scss */
+/* line 41, ../sass/partials/_colors.scss */
 #sectionB input {
   background: transparent;
   color: #000;
@@ -8522,74 +8522,74 @@ h2, .h2 {
   margin-left: 10px;
 }
 
-/* line 53, ../sass/partials/_colors.scss */
+/* line 54, ../sass/partials/_colors.scss */
 #sectionC .panes .pane#search_pane a {
   color: #6f6366;
 }
 
-/* line 63, ../sass/partials/_colors.scss */
+/* line 64, ../sass/partials/_colors.scss */
 #sectionD #passage blockquote small {
   color: #6f6366;
 }
 
-/* line 69, ../sass/partials/_colors.scss */
+/* line 70, ../sass/partials/_colors.scss */
 .navbar-inner {
   background: transparent;
   border: 0;
   height: 37px;
   min-height: 37px;
 }
-/* line 74, ../sass/partials/_colors.scss */
+/* line 75, ../sass/partials/_colors.scss */
 .navbar-inner .nav {
   height: 37px;
 }
-/* line 76, ../sass/partials/_colors.scss */
+/* line 77, ../sass/partials/_colors.scss */
 .navbar-inner .nav li {
   height: 37px;
 }
-/* line 78, ../sass/partials/_colors.scss */
+/* line 79, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a {
   height: 37px;
   line-height: 37px;
 }
-/* line 81, ../sass/partials/_colors.scss */
+/* line 82, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 84, ../sass/partials/_colors.scss */
+/* line 85, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle b.caret {
   margin-top: 15px;
 }
 
-/* line 95, ../sass/partials/_colors.scss */
+/* line 96, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 97, ../sass/partials/_colors.scss */
+/* line 98, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 99, ../sass/partials/_colors.scss */
+/* line 100, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
   border-top-color: #555!important;
   border-bottom-color: #555!important;
 }
-/* line 102, ../sass/partials/_colors.scss */
+/* line 103, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover .caret {
   border-top-color: #555!important;
   border-bottom-color: #555555 !important;
 }
-/* line 108, ../sass/partials/_colors.scss */
+/* line 109, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 113, ../sass/partials/_colors.scss */
+/* line 114, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 116, ../sass/partials/_colors.scss */
+/* line 117, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }
@@ -9112,32 +9112,32 @@ p, .label {
   font-family: 'pnr' !important;
 }
 
-/* line 8, ../sass/partials/_colors.scss */
+/* line 9, ../sass/partials/_colors.scss */
 h1, h3, h4, p, li, .label {
   color: #6f6366;
 }
 
-/* line 11, ../sass/partials/_colors.scss */
+/* line 12, ../sass/partials/_colors.scss */
 h2, .h2 {
   color: #6f6366;
 }
 
-/* line 14, ../sass/partials/_colors.scss */
+/* line 15, ../sass/partials/_colors.scss */
 .icon, .input {
   color: #b2b0ac;
 }
 
-/* line 17, ../sass/partials/_colors.scss */
+/* line 18, ../sass/partials/_colors.scss */
 .button {
   color: white;
 }
 
-/* line 20, ../sass/partials/_colors.scss */
+/* line 21, ../sass/partials/_colors.scss */
 .copyright {
   color: #9e9693;
 }
 
-/* line 23, ../sass/partials/_colors.scss */
+/* line 24, ../sass/partials/_colors.scss */
 .passage-copyright {
   color: #cac4bc;
 }
@@ -9153,7 +9153,7 @@ h2, .h2 {
         }
     }
 }*/
-/* line 40, ../sass/partials/_colors.scss */
+/* line 41, ../sass/partials/_colors.scss */
 #sectionB input {
   background: transparent;
   color: #000;
@@ -9163,74 +9163,74 @@ h2, .h2 {
   margin-left: 10px;
 }
 
-/* line 53, ../sass/partials/_colors.scss */
+/* line 54, ../sass/partials/_colors.scss */
 #sectionC .panes .pane#search_pane a {
   color: #6f6366;
 }
 
-/* line 63, ../sass/partials/_colors.scss */
+/* line 64, ../sass/partials/_colors.scss */
 #sectionD #passage blockquote small {
   color: #6f6366;
 }
 
-/* line 69, ../sass/partials/_colors.scss */
+/* line 70, ../sass/partials/_colors.scss */
 .navbar-inner {
   background: transparent;
   border: 0;
   height: 37px;
   min-height: 37px;
 }
-/* line 74, ../sass/partials/_colors.scss */
+/* line 75, ../sass/partials/_colors.scss */
 .navbar-inner .nav {
   height: 37px;
 }
-/* line 76, ../sass/partials/_colors.scss */
+/* line 77, ../sass/partials/_colors.scss */
 .navbar-inner .nav li {
   height: 37px;
 }
-/* line 78, ../sass/partials/_colors.scss */
+/* line 79, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a {
   height: 37px;
   line-height: 37px;
 }
-/* line 81, ../sass/partials/_colors.scss */
+/* line 82, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 84, ../sass/partials/_colors.scss */
+/* line 85, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle b.caret {
   margin-top: 15px;
 }
 
-/* line 95, ../sass/partials/_colors.scss */
+/* line 96, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 97, ../sass/partials/_colors.scss */
+/* line 98, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 99, ../sass/partials/_colors.scss */
+/* line 100, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
   border-top-color: #555!important;
   border-bottom-color: #555!important;
 }
-/* line 102, ../sass/partials/_colors.scss */
+/* line 103, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover .caret {
   border-top-color: #555!important;
   border-bottom-color: #555555 !important;
 }
-/* line 108, ../sass/partials/_colors.scss */
+/* line 109, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 113, ../sass/partials/_colors.scss */
+/* line 114, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 116, ../sass/partials/_colors.scss */
+/* line 117, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }
@@ -9594,11 +9594,11 @@ div.jp-video {
   font-family: Verdana, Arial, sans-serif;
   line-height: 1.6;
   color: #fff;
-  border-top: 1px solid #554461;
-  border-left: 1px solid #554461;
+  border-top: 1px solid #b2b0ac;
+  border-left: 1px solid #b2b0ac;
   border-right: 1px solid #180a1f;
   border-bottom: 1px solid #180a1f;
-  background-color: #3a2a45;
+  background-color: #373737;
 }
 
 /* line 36, ../sass/partials/_jplayer.pink.flag.scss */
@@ -9675,7 +9675,7 @@ div.jp-video-full div.jp-interface {
 div.jp-interface {
   position: relative;
   width: 100%;
-  background-color: #3a2a45;
+  background-color: #373737;
   /* Required for the full screen */
 }
 
@@ -10114,7 +10114,7 @@ div.jp-video .jp-volume-bar {
 .jp-current-time, .jp-duration {
   width: 70px;
   font-size: .5em;
-  color: #8c7a99;
+  color: #b2b0ac;
 }
 
 /* line 481, ../sass/partials/_jplayer.pink.flag.scss */
@@ -10164,7 +10164,7 @@ div.jp-video .jp-volume-bar {
 .jp-playlist li {
   position: relative;
   padding: 2px 0;
-  border-top: 1px solid #554461;
+  border-top: 1px solid #b2b0ac;
   border-bottom: 1px solid #180a1f;
   overflow: hidden;
 }
@@ -10198,21 +10198,21 @@ div.jp-type-playlist div.jp-playlist a {
 
 /* line 551, ../sass/partials/_jplayer.pink.flag.scss */
 div.jp-type-playlist div.jp-playlist a:hover {
-  color: #e892e9;
+  color: #b2b0ac;
 }
 
 /* line 555, ../sass/partials/_jplayer.pink.flag.scss */
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
-  background-color: #26102e;
+  background-color: #6f6366;
   margin: 0 -20px;
   padding: 2px 20px;
-  border-top: 1px solid #26102e;
-  border-bottom: 1px solid #26102e;
+  border-top: 1px solid #6f6366;
+  border-bottom: 1px solid #6f6366;
 }
 
 /* line 563, ../sass/partials/_jplayer.pink.flag.scss */
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current a {
-  color: #e892e9;
+  color: #b2b0ac;
 }
 
 /* line 567, ../sass/partials/_jplayer.pink.flag.scss */
@@ -10222,12 +10222,12 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove {
   text-align: right;
   margin-left: 10px;
   font-weight: bold;
-  color: #8C7A99;
+  color: #b2b0ac;
 }
 
 /* line 575, ../sass/partials/_jplayer.pink.flag.scss */
 div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove:hover {
-  color: #E892E9;
+  color: #b2b0ac;
 }
 
 /* line 579, ../sass/partials/_jplayer.pink.flag.scss */
@@ -10235,23 +10235,23 @@ div.jp-type-playlist div.jp-playlist span.jp-free-media {
   float: right;
   display: inline;
   text-align: right;
-  color: #8C7A99;
+  color: #b2b0ac;
 }
 
 /* line 586, ../sass/partials/_jplayer.pink.flag.scss */
 div.jp-type-playlist div.jp-playlist span.jp-free-media a {
-  color: #8C7A99;
+  color: #b2b0ac;
 }
 
 /* line 590, ../sass/partials/_jplayer.pink.flag.scss */
 div.jp-type-playlist div.jp-playlist span.jp-free-media a:hover {
-  color: #E892E9;
+  color: #b2b0ac;
 }
 
 /* line 593, ../sass/partials/_jplayer.pink.flag.scss */
 span.jp-artist {
   font-size: .8em;
-  color: #8C7A99;
+  color: #b2b0ac;
 }
 
 /* @end */
@@ -10316,9 +10316,9 @@ div.jp-jplayer {
 .jp-no-solution {
   padding: 5px;
   font-size: .8em;
-  background-color: #3a2a45;
-  border-top: 2px solid #554461;
-  border-left: 2px solid #554461;
+  background-color: #373737;
+  border-top: 2px solid #b2b0ac;
+  border-left: 2px solid #b2b0ac;
   border-right: 2px solid #180a1f;
   border-bottom: 2px solid #180a1f;
   color: #FFF;
