@@ -18,6 +18,10 @@ body {
     .loader {
         background:url(../img/ajax-loader-grey.gif) no-repeat 50% 50%;
     }
+    iframe {
+        height:200px;
+        overflow:hidden !important;
+    }
 }
 #toolbar {
     width:100%;
@@ -387,3 +391,4 @@ body.reading-plan #sectionD {
         display:none !important
     }
 }
+

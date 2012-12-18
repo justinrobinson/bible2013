@@ -1,6 +1,6 @@
 <div ng-controller='CommentsCtrl'>
     <div ng-switch on='commentsAvailable'>
-        <iframe src='http://www.cbn.com/auth/social/Bible2013Logon.aspx' style='height:200px;width:100%;'></iframe>
+        <iframe src='http://www.cbn.com/auth/social/Bible2013Logon.aspx'></iframe>
 		
         <span ng-switch-when='true'>
             <div ng-include src="'views/commentsPager.html'"></div>
@@ -14,7 +14,7 @@
         <span ng-switch-when='false'>
             <span class='loader'>Loading...</span>
         </span>
-		<textarea></textarea>
-		<input type='button' value = 'Post'/>
+        <textarea>Style and Script Me!</textarea><br />
+		<input class='btn' type='button' value='Post'/>
     </div>
 </div>
