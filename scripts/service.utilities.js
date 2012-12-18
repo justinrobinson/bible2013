@@ -1,6 +1,6 @@
 'use strict';
 
-bible2012App.factory('utilities', function($log, $http, $location, $rootScope, config) {
+bible2012App.factory('utilities', function($log, $http, $location, $rootScope, config, nltIndex) {
   // Service logic
   // ...
 
@@ -64,10 +64,12 @@ bible2012App.factory('utilities', function($log, $http, $location, $rootScope, c
         return arr;
     },
     getBooks: function() {
-        var index = config.currentVersionIndex;
+        var index = config.currentVersionIndex || nltIndex;
         var arr = [];
-        for (var key in config.currentVersionIndex) {
-            arr.push(config.currentVersionIndex[key].BookName);
+        for (var key in index) {
+            if (index.hasOwnProperty(key)) {
+                arr.push({'bookname': index[key].BookName});
+            }
         }
         return arr;
     },

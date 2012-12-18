@@ -22,6 +22,7 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
     $scope.chapters = utilities.getChapters();
     $scope.verses = utilities.getVerses();
     $scope.passageAvailable = false;
+    $scope.books = utilities.getBooks();
     // Update books with new version index
     $scope.getBooks = function() {
         if (config.currentVersionIndex == null) {
@@ -29,6 +30,7 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
             return;
         }
         $scope.books = utilities.getBooks();
+        $log.log('$scope.books', $scope.books);
     }
     // Used for initial load
     $scope.getBooks();

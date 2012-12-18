@@ -3,69 +3,95 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/* line 11, ../sass/ie.scss */
+/* line 7, ../sass/ie.scss */
+.lt-ie8 #sectionC {
+  min-height: 500px;
+  height: 500px !important;
+}
+/* line 10, ../sass/ie.scss */
+.lt-ie8 #sectionC .pane {
+  min-height: 500px;
+  height: 500px !important;
+}
+/* line 14, ../sass/ie.scss */
 .lt-ie8 #sectionC .pane h2, .lt-ie8 #sectionC .pane .home {
   display: none !important;
 }
-/* line 21, ../sass/ie.scss */
+/* line 24, ../sass/ie.scss */
 .lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_audio,
 .lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_share,
 .lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_comment,
 .lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_resources {
   display: none;
 }
-/* line 31, ../sass/ie.scss */
+/* line 34, ../sass/ie.scss */
 .lt-ie8 #sectionB .navbar .navbar-inner .nav a b.caret {
   margin-top: 5px !important;
 }
 
-/* line 41, ../sass/ie.scss */
+/* line 44, ../sass/ie.scss */
 .hidden {
   display: none !important;
 }
 
-/* line 45, ../sass/ie.scss */
+/* line 48, ../sass/ie.scss */
 .lt-ie9 #column_wrapper {
   background: white url(../img/ieBackground.gif) repeat-y 100% 0;
 }
-/* line 48, ../sass/ie.scss */
+/* line 51, ../sass/ie.scss */
 .lt-ie9 #sectionB {
   z-index: 3000000;
 }
-/* line 55, ../sass/ie.scss */
+/* line 58, ../sass/ie.scss */
 .lt-ie9 #sectionB .navbar .navbar-inner .nav li#bibleVersionsDropDown ul {
   border-width: 10px !important;
   width: 400px;
 }
-/* line 61, ../sass/ie.scss */
+/* line 64, ../sass/ie.scss */
 .lt-ie9 #sectionB .navbar .navbar-inner .nav li#bibleBooksDropDown ul {
   border-width: 10px !important;
   width: 200px;
   height: 300px !important;
   padding-top: 0 !important;
   margin-top: 0 !important;
+  overflow-x: hidden;
+  zoom: 1;
 }
-/* line 70, ../sass/ie.scss */
+/* line 73, ../sass/ie.scss */
+.lt-ie9 #sectionB .navbar .navbar-inner .nav li#bibleBooksDropDown ul li {
+  display: block !important;
+  position: absolute;
+  width: 100%;
+  float: left;
+  height: auto;
+}
+/* line 80, ../sass/ie.scss */
+.lt-ie9 #sectionB .navbar .navbar-inner .nav li#bibleBooksDropDown ul li a {
+  display: block !important;
+  width: 100%;
+  height: 30px !important;
+}
+/* line 90, ../sass/ie.scss */
 .lt-ie9 #sectionB .navbar .navbar-inner .nav li#bibleChaptersDropDown ul {
   border-width: 10px !important;
   width: 180px;
 }
-/* line 76, ../sass/ie.scss */
+/* line 96, ../sass/ie.scss */
 .lt-ie9 #sectionB .navbar .navbar-inner .nav li#readingPlanDropDown ul {
   border-width: 10px !important;
   width: 255px;
   height: 80px;
   overflow: hidden;
 }
-/* line 85, ../sass/ie.scss */
+/* line 105, ../sass/ie.scss */
 .lt-ie9 #sectionB .navbar .navbar-inner .nav .dropdown-menu {
   visibility: visible;
 }
-/* line 92, ../sass/ie.scss */
+/* line 112, ../sass/ie.scss */
 .lt-ie9 #sectionD {
   z-index: 1;
 }
-/* line 95, ../sass/ie.scss */
+/* line 115, ../sass/ie.scss */
 .lt-ie9 #sectionD #passage_pager_previous,
 .lt-ie9 #sectionD #passage_pager_next {
   margin-top: 20px;

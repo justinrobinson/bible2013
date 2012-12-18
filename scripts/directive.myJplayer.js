@@ -24,14 +24,13 @@ bible2012App.directive('myJplayer', function($log, $filter, config) {
             }
         },
         link: function(scope, element, attrs) {
-            var player = '#jquery_jplayer_' + attrs.class,
-                cssSelector = '#jp_container_' + attrs.class,
+            var player = '#jquery_jplayer_' + attrs["class"],
+                cssSelector = '#jp_container_' + attrs["class"],
                 supplied = 'mp3',
                 wmode = 'window';
 
             function updatePlayer(e, data) {
-                $log.log('e, data, class', e, data, attrs.class);
-                if (e.name != attrs.class + 'Updated') return;
+                if (e.name != attrs["class"] + 'Updated') return;
                 $(player).jPlayer('destroy');
 
                 var tracks = scope.prepareTracks(data);

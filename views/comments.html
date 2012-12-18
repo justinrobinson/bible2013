@@ -1,9 +1,12 @@
 <div ng-controller='CommentsCtrl'>
     <div ng-switch on='commentsAvailable'>
-		<!--<script>
+		<script>
 			document.domain = "cbn.com";
+			function ReloadMe(){
+				alert('reload has been called by iframe');
+			}
 		</script>
-        <iframe src='http://www.cbn.com/auth/social/Bible2013Logon.aspx' style='height:200px;width:100%;'></iframe>-->
+        <iframe src='http://www.cbn.com/auth/social/Bible2013Logon.aspx' style='height:200px;width:100%;'></iframe>
 		
         <span ng-switch-when='true'>
             <div ng-include src="'views/commentsPager.html'"></div>
