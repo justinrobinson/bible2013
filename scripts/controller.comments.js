@@ -3,6 +3,7 @@ bible2012App.controller('CommentsCtrl', function($http, $scope, $rootScope, $log
     $scope.nextReady = true;
     $scope.pageNumber = 1;
     $scope.commentCount = 100;
+    $scope.commentsAvailable = false;
     $scope.previous = function() {
         if ($scope.pageNumber != 1) {
             $scope.nextEnabled = true;
@@ -28,6 +29,7 @@ bible2012App.controller('CommentsCtrl', function($http, $scope, $rootScope, $log
         $scope.load();
     });
     $scope.load = function() {
+        $scope.commentsAvailable = false;
         $http({
                 method: 'GET',
                 params: {
@@ -51,6 +53,7 @@ bible2012App.controller('CommentsCtrl', function($http, $scope, $rootScope, $log
                 } else {
                     $scope.nextEnabled = false;
                 }
+                $scope.commentsAvailable = true;
             }
         });
     };

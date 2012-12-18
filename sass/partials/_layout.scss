@@ -6,6 +6,19 @@ body {
     text-align:center;
     background:url(../img/background.png);
 }
+.loader {
+    display:block;
+    width:100%;
+    height:50px;
+    text-indent:-3000em;
+    overflow:hidden;
+    background:url(../img/ajax-loader-white.gif) no-repeat 50% 50%;
+}
+#sectionC {
+    .loader {
+        background:url(../img/ajax-loader-grey.gif) no-repeat 50% 50%;
+    }
+}
 #toolbar {
     width:100%;
     height:31px;
@@ -274,7 +287,8 @@ body {
     border-left:solid 1px #d1caca;
     min-height:600px;
     h1 {
-            margin-bottom:20px
+            margin-bottom:20px;
+            margin-top:30px;
         }
         h2 {
             margin-bottom:10px
@@ -340,7 +354,7 @@ body {
     }
 }
 body.reading-plan #sectionD {
-    padding:30px
+    padding:0 30px 30px 30px
 }
 #wrapper #sectionE {
     width:950px;

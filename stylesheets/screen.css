@@ -2959,24 +2959,24 @@ table .span24 {
   background-position: -456px -144px;
 }
 
-/* line 8, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 12, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup,
 .dropdown {
   position: relative;
 }
 
-/* line 11, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 15, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-toggle {
   *margin-bottom: -3px;
 }
 
-/* line 16, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 20, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-toggle:active,
 .open .dropdown-toggle {
   outline: 0;
 }
 
-/* line 22, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 26, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .caret {
   display: inline-block;
   width: 0;
@@ -2988,13 +2988,13 @@ table .span24 {
   content: "";
 }
 
-/* line 34, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 38, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown .caret {
   margin-top: 8px;
   margin-left: 2px;
 }
 
-/* line 41, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 45, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -3006,9 +3006,9 @@ table .span24 {
   padding: 0;
   margin: 2px 0 0;
   list-style: none;
-  background-color: white;
+  background-color: #c8bfbc;
   border: 10px solid #ccc;
-  border: 10px solid #ccc;
+  border: 10px solid #aba39e;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   -webkit-border-radius: 6px;
@@ -3023,12 +3023,12 @@ table .span24 {
   max-height: 300px;
   overflow-y: scroll;
 }
-/* line 66, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 71, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
-/* line 72, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 76, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
@@ -3038,26 +3038,35 @@ table .span24 {
   background-color: #e5e5e5;
   border-bottom: 1px solid white;
 }
-/* line 77, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 81, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu a {
   display: block;
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
   line-height: 20px;
-  color: #333333;
+  color: #fff !important;
   white-space: nowrap;
 }
+/* line 90, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+.dropdown-menu a:hover {
+  background: #aba39e;
+}
 
-/* line 92, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 96, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+li#readingPlanDropDown .dropdown-menu {
+  overflow: hidden !important;
+}
+
+/* line 105, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   text-decoration: none;
-  background-color: #e5e5e5;
+  background-color: #d4ccc9;
 }
 
-/* line 103, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 116, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: white;
@@ -3074,42 +3083,43 @@ table .span24 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0085c7', endColorstr='#0074ad', GradientType=0);
 }
 
-/* line 115, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 128, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
   color: #999999;
 }
 
-/* line 119, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 132, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-menu .disabled > a:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
 }
 
-/* line 127, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 140, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .open {
   *z-index: 1000;
 }
-/* line 132, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 145, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .open > .dropdown-menu {
   display: block;
+  top: 40px;
 }
 
-/* line 139, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 153, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
 
-/* line 151, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 165, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px solid black;
   content: "\2191";
 }
-/* line 157, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 171, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
@@ -3117,12 +3127,12 @@ table .span24 {
   margin-bottom: 1px;
 }
 
-/* line 166, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 180, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu {
   position: relative;
 }
 
-/* line 169, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 183, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -3133,12 +3143,12 @@ table .span24 {
   border-radius: 0 6px 6px 6px;
 }
 
-/* line 178, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 192, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu:hover .dropdown-menu {
   display: block;
 }
 
-/* line 182, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 196, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -3153,18 +3163,18 @@ table .span24 {
   margin-right: -10px;
 }
 
-/* line 195, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 209, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: white;
 }
 
-/* line 203, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 217, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .dropdown .dropdown-menu .nav-header {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 210, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
+/* line 224, ../sass/compass_twitter_bootstrap/_dropdowns.scss */
 .typeahead {
   margin-top: 2px;
   -webkit-border-radius: 4px;
@@ -4458,7 +4468,7 @@ input[type="submit"].btn.btn-mini {
   cursor: default;
 }
 
-/* line 10, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 11, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar {
   overflow: visible;
   margin-bottom: 20px;
@@ -4467,7 +4477,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
 }
 
-/* line 22, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 23, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inner {
   min-height: 40px;
   padding-left: 20px;
@@ -4481,17 +4491,17 @@ input[type="submit"].btn.btn-mini {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
-/* line 34, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 35, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .container {
   width: auto;
 }
 
-/* line 39, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 40, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .nav-collapse.collapse {
   height: auto;
 }
 
-/* line 46, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 47, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .brand {
   float: left;
   display: block;
@@ -4502,27 +4512,27 @@ input[type="submit"].btn.btn-mini {
   color: #555555;
   text-shadow: 0 1px 0 white;
 }
-/* line 56, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 57, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .brand:hover {
   text-decoration: none;
 }
 
-/* line 63, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 64, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
 }
 
-/* line 70, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 71, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-link {
   color: #555555;
 }
-/* line 72, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 73, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-link:hover {
   color: #333333;
 }
 
-/* line 79, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 80, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .divider-vertical {
   height: 40px;
   margin: 0 9px;
@@ -4530,18 +4540,18 @@ input[type="submit"].btn.btn-mini {
   border-right: 1px solid white;
 }
 
-/* line 89, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 90, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .btn,
 .navbar .btn-group {
   margin-top: 6px;
 }
 
-/* line 92, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 93, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .btn-group .btn {
   margin: 0;
 }
 
-/* line 97, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 98, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-form {
   margin-bottom: 0;
   *zoom: 1;
@@ -4556,46 +4566,46 @@ input[type="submit"].btn.btn-mini {
 .navbar-form:after {
   clear: both;
 }
-/* line 103, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 104, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-form input,
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
   margin-top: 5px;
 }
-/* line 108, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 109, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-form input,
 .navbar-form select,
 .navbar-form .btn {
   display: inline-block;
   margin-bottom: 0;
 }
-/* line 114, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 115, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-form input[type="image"],
 .navbar-form input[type="checkbox"],
 .navbar-form input[type="radio"] {
   margin-top: 3px;
 }
-/* line 118, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 119, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-form .input-append,
 .navbar-form .input-prepend {
   margin-top: 6px;
   white-space: nowrap;
 }
-/* line 121, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 122, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-form .input-append input,
 .navbar-form .input-prepend input {
   margin-top: 0;
 }
 
-/* line 128, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 129, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-search {
   position: relative;
   float: left;
   margin-top: 5px;
   margin-bottom: 0;
 }
-/* line 133, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 134, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
@@ -4608,20 +4618,20 @@ input[type="submit"].btn.btn-mini {
   border-radius: 15px;
 }
 
-/* line 146, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 147, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-static-top {
   position: static;
   width: 100%;
   margin-bottom: 0;
 }
-/* line 150, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 151, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-static-top .navbar-inner {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 
-/* line 162, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 163, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   position: fixed;
@@ -4631,14 +4641,14 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 0;
 }
 
-/* line 172, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 173, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-top .navbar-inner,
 .navbar-fixed-bottom .navbar-inner,
 .navbar-static-top .navbar-inner {
   border: 0;
 }
 
-/* line 177, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 178, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-top .navbar-inner,
 .navbar-fixed-bottom .navbar-inner {
   padding-left: 0;
@@ -4648,19 +4658,19 @@ input[type="submit"].btn.btn-mini {
   border-radius: 0;
 }
 
-/* line 187, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 188, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
 }
 
-/* line 192, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 193, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-top {
   top: 0;
 }
 
-/* line 197, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 198, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -4668,18 +4678,18 @@ input[type="submit"].btn.btn-mini {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* line 203, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 204, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom {
   bottom: 0;
 }
-/* line 205, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 206, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .navbar-inner {
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* line 215, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 216, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav {
   position: relative;
   left: 0;
@@ -4688,17 +4698,17 @@ input[type="submit"].btn.btn-mini {
   margin: 0 10px 0 0;
 }
 
-/* line 222, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 223, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav.pull-right {
   float: right;
 }
 
-/* line 225, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 226, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav > li {
   float: left;
 }
 
-/* line 230, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 231, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
@@ -4707,12 +4717,12 @@ input[type="submit"].btn.btn-mini {
   text-shadow: 0 1px 0 white;
 }
 
-/* line 238, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 239, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
 }
 
-/* line 244, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 245, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   background-color: transparent;
@@ -4720,7 +4730,7 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
 }
 
-/* line 253, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 254, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
@@ -4732,7 +4742,7 @@ input[type="submit"].btn.btn-mini {
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
 }
 
-/* line 264, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 265, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .btn-navbar {
   display: none;
   float: right;
@@ -4769,7 +4779,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #cbcbcb \9;
 }
 
-/* line 273, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 274, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .btn-navbar .icon-bar {
   display: block;
   width: 18px;
@@ -4783,72 +4793,77 @@ input[type="submit"].btn.btn-mini {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* line 281, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 282, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .btn-navbar .icon-bar + .icon-bar {
   margin-top: 3px;
 }
 
-/* line 292, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 293, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav > li > .dropdown-menu:before {
   content: '';
   display: inline-block;
   border-left: 27px solid transparent;
   border-right: 27px solid transparent !important;
-  border-bottom: 27px solid #ccc !important;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 27px solid #aba39e !important;
+  border-bottom-color: #aba39e;
   position: absolute;
   top: -27px;
   left: 0px;
 }
-/* line 303, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 304, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav > li > .dropdown-menu:after {
   content: '';
   display: inline-block;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
-  border-bottom: 16px solid white;
+  border-bottom: 16px solid #aba39e;
   position: absolute;
   top: -16px;
   left: 10px;
 }
 
-/* line 315, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 316, ../sass/compass_twitter_bootstrap/_navbar.scss */
 a.dropdown-toggle::before {
   content: '';
   display: inline-block;
   border-left: 27px solid transparent;
   border-right: 27px solid transparent;
-  border-bottom: 27px solid #CCC;
-  border-bottom-color: #ccc;
+  border-bottom: 27px solid #aba39e;
+  border-bottom-color: #aba39e;
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
   right: 50%;
   margin-right: -22px;
   display: none;
 }
 
-/* line 329, ../sass/compass_twitter_bootstrap/_navbar.scss */
-a.dropdown-toggle::after {
-  content: '';
-  display: inline-block;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-bottom: 16px solid white;
-  position: absolute;
-  bottom: -12px;
-  right: 50%;
-  margin-right: -12px;
-  z-index: 1001;
-  display: none;
+/* line 331, ../sass/compass_twitter_bootstrap/_navbar.scss */
+li#bibleChaptersDropDown a.dropdown-toggle::before {
+  margin-right: -30px !important;
 }
 
-/* line 343, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 335, ../sass/compass_twitter_bootstrap/_navbar.scss */
+a.dropdown-toggle::after {
+  	/*content: '';
+  	display: inline-block;
+  	border-left: 16px solid transparent;
+  	border-right: 16px solid transparent;
+  	border-bottom: 16px solid $dropdownBorderColor;
+  	position: absolute;
+  	bottom: -12px;
+  	right: 50%;
+      margin-right:-12px;
+  	z-index: 1001;
+  	display: none;*/
+}
+
+/* line 349, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .open > a.dropdown-toggle::before,
 .open > a.dropdown-toggle::after {
   display: block;
 }
 
-/* line 348, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 354, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .dropdown-menu:before {
   border-top: 7px solid #ccc;
   border-top-color: rgba(0, 0, 0, 0.2);
@@ -4856,7 +4871,7 @@ a.dropdown-toggle::after {
   bottom: -7px;
   top: auto;
 }
-/* line 355, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 361, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .dropdown-menu:after {
   border-top: 6px solid white;
   border-bottom: 0;
@@ -4864,47 +4879,48 @@ a.dropdown-toggle::after {
   top: auto;
 }
 
-/* line 366, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 372, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #e5e5e5;
-  color: #555555;
+  background-color: #8D8583;
+  color: #fff;
+  border-bottom: #000;
 }
 
-/* line 370, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 379, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 
-/* line 376, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 385, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 
-/* line 383, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 392, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
-/* line 386, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 395, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu:before,
 .navbar .nav > li > .dropdown-menu.pull-right:before {
   left: auto;
   right: 12px;
 }
-/* line 390, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 399, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu:after,
 .navbar .nav > li > .dropdown-menu.pull-right:after {
   left: auto;
   right: 13px;
 }
-/* line 394, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 403, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
   left: auto;
@@ -4916,11 +4932,11 @@ a.dropdown-toggle::after {
   border-radius: 6px 0 6px 6px;
 }
 
-/* line 407, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 416, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse {
   color: #999999;
 }
-/* line 410, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 419, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-inner {
   background-color: #1b1b1b;
   background-image: -moz-linear-gradient(top, #222222, #111111);
@@ -4932,63 +4948,63 @@ a.dropdown-toggle::after {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f1f1f', endColorstr='#0e0e0e', GradientType=0);
   border-color: #252525;
 }
-/* line 416, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 425, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
   color: #999999;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-/* line 419, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 428, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover {
   color: white;
 }
-/* line 425, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 434, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
   background-color: transparent;
   color: white;
 }
-/* line 432, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 441, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav .active > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   color: white;
   background-color: #111111;
 }
-/* line 438, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 447, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link {
   color: #999999;
 }
-/* line 440, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 449, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-link:hover {
   color: white;
 }
-/* line 446, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 455, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .divider-vertical {
   border-left-color: #111111;
   border-right-color: #222222;
 }
-/* line 454, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 463, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #111111;
   color: white;
 }
-/* line 458, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 467, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #999999;
   border-bottom-color: #999999;
 }
-/* line 464, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 473, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
-/* line 471, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 480, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-search .search-query {
   color: white;
   background-color: #515151;
@@ -5013,7 +5029,7 @@ a.dropdown-toggle::after {
 .navbar-inverse .navbar-search .search-query::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 481, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 490, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .navbar-search .search-query:focus, .navbar-inverse .navbar-search .search-query.focused {
   padding: 5px 15px;
   color: #333333;
@@ -5025,7 +5041,7 @@ a.dropdown-toggle::after {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
   outline: 0;
 }
-/* line 494, ../sass/compass_twitter_bootstrap/_navbar.scss */
+/* line 503, ../sass/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .btn-navbar {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
@@ -8471,32 +8487,32 @@ body .ui-tooltip {
   border-radius: 8px;
 }
 
-/* line 9, ../sass/partials/_colors.scss */
+/* line 10, ../sass/partials/_colors.scss */
 h1, h3, h4, p, li, .label {
   color: #6f6366;
 }
 
-/* line 12, ../sass/partials/_colors.scss */
+/* line 13, ../sass/partials/_colors.scss */
 h2, .h2 {
   color: #6f6366;
 }
 
-/* line 15, ../sass/partials/_colors.scss */
+/* line 16, ../sass/partials/_colors.scss */
 .icon, .input {
   color: #b2b0ac;
 }
 
-/* line 18, ../sass/partials/_colors.scss */
+/* line 19, ../sass/partials/_colors.scss */
 .button {
   color: white;
 }
 
-/* line 21, ../sass/partials/_colors.scss */
+/* line 22, ../sass/partials/_colors.scss */
 .copyright {
   color: #9e9693;
 }
 
-/* line 24, ../sass/partials/_colors.scss */
+/* line 25, ../sass/partials/_colors.scss */
 .passage-copyright {
   color: #cac4bc;
 }
@@ -8512,7 +8528,7 @@ h2, .h2 {
         }
     }
 }*/
-/* line 41, ../sass/partials/_colors.scss */
+/* line 42, ../sass/partials/_colors.scss */
 #sectionB input {
   background: transparent;
   color: #000;
@@ -8522,74 +8538,68 @@ h2, .h2 {
   margin-left: 10px;
 }
 
-/* line 54, ../sass/partials/_colors.scss */
+/* line 55, ../sass/partials/_colors.scss */
 #sectionC .panes .pane#search_pane a {
   color: #6f6366;
 }
 
-/* line 64, ../sass/partials/_colors.scss */
+/* line 65, ../sass/partials/_colors.scss */
 #sectionD #passage blockquote small {
   color: #6f6366;
 }
 
-/* line 70, ../sass/partials/_colors.scss */
+/* line 71, ../sass/partials/_colors.scss */
 .navbar-inner {
   background: transparent;
   border: 0;
-  height: 37px;
-  min-height: 37px;
+  height: 36px;
+  min-height: 36px;
 }
-/* line 75, ../sass/partials/_colors.scss */
+/* line 76, ../sass/partials/_colors.scss */
 .navbar-inner .nav {
-  height: 37px;
+  height: 36px;
 }
-/* line 77, ../sass/partials/_colors.scss */
+/* line 78, ../sass/partials/_colors.scss */
 .navbar-inner .nav li {
-  height: 37px;
+  height: 36px;
 }
-/* line 79, ../sass/partials/_colors.scss */
+/* line 80, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a {
-  height: 37px;
-  line-height: 37px;
+  height: 36px;
+  line-height: 36px;
 }
-/* line 82, ../sass/partials/_colors.scss */
+/* line 83, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 85, ../sass/partials/_colors.scss */
+/* line 86, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle b.caret {
   margin-top: 15px;
 }
 
-/* line 96, ../sass/partials/_colors.scss */
+/* line 98, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 98, ../sass/partials/_colors.scss */
+/* line 100, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 100, ../sass/partials/_colors.scss */
+/* line 102, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
-  border-top-color: #555!important;
-  border-bottom-color: #555!important;
+  color: #fff;
 }
-/* line 103, ../sass/partials/_colors.scss */
-li.dropdown a.dropdown-toggle:hover .caret {
-  border-top-color: #555!important;
-  border-bottom-color: #555555 !important;
-}
-/* line 109, ../sass/partials/_colors.scss */
+/* line 108, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 114, ../sass/partials/_colors.scss */
+/* line 113, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 117, ../sass/partials/_colors.scss */
+/* line 116, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }
@@ -8606,6 +8616,21 @@ body {
 }
 
 /* line 9, ../sass/partials/_layout.scss */
+.loader {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-indent: -3000em;
+  overflow: hidden;
+  background: url(../img/ajax-loader-white.gif) no-repeat 50% 50%;
+}
+
+/* line 18, ../sass/partials/_layout.scss */
+#sectionC .loader {
+  background: url(../img/ajax-loader-grey.gif) no-repeat 50% 50%;
+}
+
+/* line 22, ../sass/partials/_layout.scss */
 #toolbar {
   width: 100%;
   height: 31px;
@@ -8613,14 +8638,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* line 15, ../sass/partials/_layout.scss */
+/* line 28, ../sass/partials/_layout.scss */
 #wrapper {
   width: 950px;
   margin: 0 auto;
   text-align: left;
 }
 
-/* line 20, ../sass/partials/_layout.scss */
+/* line 33, ../sass/partials/_layout.scss */
 #wrapper #sectionA {
   position: relative;
   width: 950px;
@@ -8628,14 +8653,14 @@ body {
   background: url(../img/sprites.png) no-repeat -1px -271px;
 }
 
-/* line 26, ../sass/partials/_layout.scss */
+/* line 39, ../sass/partials/_layout.scss */
 #wrapper #sectionA #logo {
   position: absolute;
   top: 15px;
   left: 30px;
 }
 
-/* line 31, ../sass/partials/_layout.scss */
+/* line 44, ../sass/partials/_layout.scss */
 #wrapper #sectionA #logo a {
   display: block;
   width: 236px;
@@ -8644,14 +8669,14 @@ body {
   overflow: hidden;
 }
 
-/* line 38, ../sass/partials/_layout.scss */
+/* line 51, ../sass/partials/_layout.scss */
 #wrapper #sectionA #search {
   position: absolute;
   top: 36px;
   left: 556px;
 }
 
-/* line 44, ../sass/partials/_layout.scss */
+/* line 57, ../sass/partials/_layout.scss */
 #wrapper #sectionA #search form input,
 #wrapper #sectionA #search form button {
   background: #f6f6f6;
@@ -8659,7 +8684,7 @@ body {
   height: 36px;
 }
 
-/* line 49, ../sass/partials/_layout.scss */
+/* line 62, ../sass/partials/_layout.scss */
 #wrapper #sectionA #search form input {
   width: 315px;
   float: left;
@@ -8672,7 +8697,7 @@ body {
   cursor: pointer;
 }
 
-/* line 60, ../sass/partials/_layout.scss */
+/* line 73, ../sass/partials/_layout.scss */
 #wrapper #sectionA #search form button {
   width: 41px;
   height: 40px;
@@ -8684,12 +8709,12 @@ body {
   border: 0;
 }
 
-/* line 70, ../sass/partials/_layout.scss */
+/* line 83, ../sass/partials/_layout.scss */
 #column_wrapper {
   position: relative;
 }
 
-/* line 73, ../sass/partials/_layout.scss */
+/* line 86, ../sass/partials/_layout.scss */
 #wrapper #sectionB {
   width: 615px;
   height: 37px;
@@ -8700,17 +8725,17 @@ body {
   text-transform: uppercase;
   font-size: 14px;
 }
-/* line 82, ../sass/partials/_layout.scss */
+/* line 95, ../sass/partials/_layout.scss */
 #wrapper #sectionB .ui-fixed {
   position: fixed;
 }
-/* line 85, ../sass/partials/_layout.scss */
+/* line 98, ../sass/partials/_layout.scss */
 #wrapper #sectionB input {
   cursor: pointer;
   width: 90px;
   text-transform: uppercase;
 }
-/* line 93, ../sass/partials/_layout.scss */
+/* line 106, ../sass/partials/_layout.scss */
 #wrapper #sectionB .navbar-inner li a#previous,
 #wrapper #sectionB .navbar-inner li a#next {
   position: absolute;
@@ -8722,17 +8747,17 @@ body {
   text-indent: -3000em;
   overflow: hidden;
 }
-/* line 103, ../sass/partials/_layout.scss */
+/* line 116, ../sass/partials/_layout.scss */
 #wrapper #sectionB .navbar-inner li a#previous {
   background: url(../img/sprites.png) no-repeat -214px 0;
 }
-/* line 106, ../sass/partials/_layout.scss */
+/* line 119, ../sass/partials/_layout.scss */
 #wrapper #sectionB .navbar-inner li a#next {
   left: 530px;
   background: url(../img/sprites.png) no-repeat -224px 0;
 }
 
-/* line 113, ../sass/partials/_layout.scss */
+/* line 126, ../sass/partials/_layout.scss */
 #wrapper #sectionB #sign_up {
   width: 75px;
   height: 17px;
@@ -8752,7 +8777,7 @@ body {
   text-align: center;
 }
 
-/* line 131, ../sass/partials/_layout.scss */
+/* line 144, ../sass/partials/_layout.scss */
 #wrapper #sectionC {
   width: 297px;
   padding: 24px 19px;
@@ -8765,39 +8790,39 @@ body {
   overflow: hidden;
 }
 
-/* line 142, ../sass/partials/_layout.scss */
+/* line 155, ../sass/partials/_layout.scss */
 #column_wrapper {
   background: #fff;
 }
-/* line 147, ../sass/partials/_layout.scss */
+/* line 160, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane h2 {
   margin-bottom: 20px;
 }
-/* line 150, ../sass/partials/_layout.scss */
+/* line 163, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane h3 {
   margin-top: 15px;
   clear: both;
   float: none;
 }
-/* line 155, ../sass/partials/_layout.scss */
+/* line 168, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane h3, #column_wrapper #sectionC .panes .pane h4, #column_wrapper #sectionC .panes .pane p {
   margin: 0 20px;
   line-height: 20px;
 }
-/* line 159, ../sass/partials/_layout.scss */
+/* line 172, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane p {
   margin-top: 5px;
 }
-/* line 162, ../sass/partials/_layout.scss */
+/* line 175, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane h4 {
   line-height: 10px;
   margin-bottom: 5px;
 }
-/* line 166, ../sass/partials/_layout.scss */
+/* line 179, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane#search_pane {
   display: none;
 }
-/* line 174, ../sass/partials/_layout.scss */
+/* line 187, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane#search_pane a .profile_img, #column_wrapper #sectionC .panes .pane#comment_pane a .profile_img {
   display: block;
   width: 40px;
@@ -8805,26 +8830,26 @@ body {
   float: left;
   margin: 0 30px 35px 0;
 }
-/* line 182, ../sass/partials/_layout.scss */
+/* line 195, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane#search_pane p, #column_wrapper #sectionC .panes .pane#comment_pane p {
   clear: both;
   float: none;
   margin: 20px;
   margin-top: 5px;
 }
-/* line 187, ../sass/partials/_layout.scss */
+/* line 200, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC .panes .pane#search_pane p#searchedFor, #column_wrapper #sectionC .panes .pane#comment_pane p#searchedFor {
   margin-top: 20px;
 }
-/* line 195, ../sass/partials/_layout.scss */
+/* line 208, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up h2 {
   margin: 75px 0 10px 0;
 }
-/* line 198, ../sass/partials/_layout.scss */
+/* line 211, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up h3, #column_wrapper #sectionC #sectionC_sign_up li {
   margin-bottom: 10px;
 }
-/* line 201, ../sass/partials/_layout.scss */
+/* line 214, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up a#sectionC_sign_up_button {
   display: block;
   width: 282px;
@@ -8833,7 +8858,7 @@ body {
   overflow: hidden;
   background: url(../img/sprites.png) no-repeat 0 -231px;
 }
-/* line 210, ../sass/partials/_layout.scss */
+/* line 223, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_phone {
   position: absolute;
   bottom: 0;
@@ -8841,7 +8866,7 @@ body {
   height: 260px;
   background: url(../img/sprites.png) 0 -505px no-repeat;
 }
-/* line 217, ../sass/partials/_layout.scss */
+/* line 230, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up_form {
   display: none;
   position: absolute;
@@ -8854,7 +8879,7 @@ body {
   -webkit-border-radius: 10px;
   padding: 10px;
 }
-/* line 228, ../sass/partials/_layout.scss */
+/* line 241, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up_form:before, #column_wrapper #sectionC #sectionC_sign_up_form:after {
   content: '';
   position: absolute;
@@ -8864,19 +8889,19 @@ body {
   left: 245px;
   margin-left: -10px;
 }
-/* line 237, ../sass/partials/_layout.scss */
+/* line 250, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up_form:before {
   border-bottom: 10px solid #d1caca;
   border-bottom: 10px solid rgba(0, 0, 0, 0.5);
   margin-bottom: 5px;
 }
-/* line 242, ../sass/partials/_layout.scss */
+/* line 255, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up_form:after {
   border-bottom: 10px solid #d1caca;
   margin-bottom: -2px;
   z-index: 1;
 }
-/* line 247, ../sass/partials/_layout.scss */
+/* line 260, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up_form input[type=text] {
   width: 275px;
   height: 30px;
@@ -8886,7 +8911,7 @@ body {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-/* line 256, ../sass/partials/_layout.scss */
+/* line 269, ../sass/partials/_layout.scss */
 #column_wrapper #sectionC #sectionC_sign_up_form a {
   display: block;
   width: 282px;
@@ -8896,7 +8921,7 @@ body {
   background: url(../img/sprites.png) no-repeat -562px -231px;
 }
 
-/* line 268, ../sass/partials/_layout.scss */
+/* line 281, ../sass/partials/_layout.scss */
 #wrapper #sectionD {
   width: 553px;
   position: relative;
@@ -8904,42 +8929,43 @@ body {
   border-left: solid 1px #d1caca;
   min-height: 600px;
 }
-/* line 276, ../sass/partials/_layout.scss */
+/* line 289, ../sass/partials/_layout.scss */
 #wrapper #sectionD h1 {
   margin-bottom: 20px;
+  margin-top: 30px;
 }
-/* line 279, ../sass/partials/_layout.scss */
+/* line 293, ../sass/partials/_layout.scss */
 #wrapper #sectionD h2 {
   margin-bottom: 10px;
 }
-/* line 282, ../sass/partials/_layout.scss */
+/* line 296, ../sass/partials/_layout.scss */
 #wrapper #sectionD p {
   margin-bottom: 30px;
 }
-/* line 290, ../sass/partials/_layout.scss */
+/* line 304, ../sass/partials/_layout.scss */
 #wrapper #sectionD #sectionD_try_apps ul li {
   float: left;
   margin: 0 10px 0 0;
 }
-/* line 296, ../sass/partials/_layout.scss */
+/* line 310, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage {
   padding: 0 89px 33px 89px;
   line-height: 24px;
   width: 435px;
 }
-/* line 300, ../sass/partials/_layout.scss */
+/* line 314, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage blockquote {
   border: 0;
 }
-/* line 302, ../sass/partials/_layout.scss */
+/* line 316, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage blockquote small {
   display: inline;
 }
-/* line 304, ../sass/partials/_layout.scss */
+/* line 318, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage blockquote small:before {
   content: "";
 }
-/* line 311, ../sass/partials/_layout.scss */
+/* line 325, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage_pager_previous,
 #wrapper #sectionD #passage_pager_next {
   position: absolute;
@@ -8947,7 +8973,7 @@ body {
   bottom: 5px;
   width: 89px;
 }
-/* line 316, ../sass/partials/_layout.scss */
+/* line 330, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage_pager_previous a,
 #wrapper #sectionD #passage_pager_next a {
   display: block;
@@ -8963,30 +8989,30 @@ body {
   width: 50px;
   background: url(../img/left_arrow_narrow.png) no-repeat 50% 176px;
 }
-/* line 327, ../sass/partials/_layout.scss */
+/* line 341, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage_pager_previous a:hover,
 #wrapper #sectionD #passage_pager_next a:hover {
   background-color: #cac4bc;
 }
-/* line 332, ../sass/partials/_layout.scss */
+/* line 346, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage_pager_next {
   left: 524px;
 }
-/* line 335, ../sass/partials/_layout.scss */
+/* line 349, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage_pager_previous a {
   background-image: url(../img/left_arrow_narrow.png);
 }
-/* line 338, ../sass/partials/_layout.scss */
+/* line 352, ../sass/partials/_layout.scss */
 #wrapper #sectionD #passage_pager_next a {
   background-image: url(../img/right_arrow_narrow.png);
 }
 
-/* line 342, ../sass/partials/_layout.scss */
+/* line 356, ../sass/partials/_layout.scss */
 body.reading-plan #sectionD {
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
-/* line 345, ../sass/partials/_layout.scss */
+/* line 359, ../sass/partials/_layout.scss */
 #wrapper #sectionE {
   width: 950px;
   height: 70px;
@@ -8996,7 +9022,7 @@ body.reading-plan #sectionD {
   background: url(../img/sprites.png) no-repeat -1px -381px;
 }
 
-/* line 353, ../sass/partials/_layout.scss */
+/* line 367, ../sass/partials/_layout.scss */
 #wrapper #sectionF {
   width: 100%;
   text-align: center;
@@ -9006,18 +9032,18 @@ body.reading-plan #sectionD {
   font-size: 12px;
 }
 
-/* line 361, ../sass/partials/_layout.scss */
+/* line 375, ../sass/partials/_layout.scss */
 #wrapper #sectionF p a {
   color: inherit !important;
 }
 
-/* line 364, ../sass/partials/_layout.scss */
+/* line 378, ../sass/partials/_layout.scss */
 .clear {
   float: none;
   clear: both;
 }
 
-/* line 368, ../sass/partials/_layout.scss */
+/* line 382, ../sass/partials/_layout.scss */
 .on {
   display: block !important;
 }
@@ -9112,32 +9138,32 @@ p, .label {
   font-family: 'pnr' !important;
 }
 
-/* line 9, ../sass/partials/_colors.scss */
+/* line 10, ../sass/partials/_colors.scss */
 h1, h3, h4, p, li, .label {
   color: #6f6366;
 }
 
-/* line 12, ../sass/partials/_colors.scss */
+/* line 13, ../sass/partials/_colors.scss */
 h2, .h2 {
   color: #6f6366;
 }
 
-/* line 15, ../sass/partials/_colors.scss */
+/* line 16, ../sass/partials/_colors.scss */
 .icon, .input {
   color: #b2b0ac;
 }
 
-/* line 18, ../sass/partials/_colors.scss */
+/* line 19, ../sass/partials/_colors.scss */
 .button {
   color: white;
 }
 
-/* line 21, ../sass/partials/_colors.scss */
+/* line 22, ../sass/partials/_colors.scss */
 .copyright {
   color: #9e9693;
 }
 
-/* line 24, ../sass/partials/_colors.scss */
+/* line 25, ../sass/partials/_colors.scss */
 .passage-copyright {
   color: #cac4bc;
 }
@@ -9153,7 +9179,7 @@ h2, .h2 {
         }
     }
 }*/
-/* line 41, ../sass/partials/_colors.scss */
+/* line 42, ../sass/partials/_colors.scss */
 #sectionB input {
   background: transparent;
   color: #000;
@@ -9163,74 +9189,68 @@ h2, .h2 {
   margin-left: 10px;
 }
 
-/* line 54, ../sass/partials/_colors.scss */
+/* line 55, ../sass/partials/_colors.scss */
 #sectionC .panes .pane#search_pane a {
   color: #6f6366;
 }
 
-/* line 64, ../sass/partials/_colors.scss */
+/* line 65, ../sass/partials/_colors.scss */
 #sectionD #passage blockquote small {
   color: #6f6366;
 }
 
-/* line 70, ../sass/partials/_colors.scss */
+/* line 71, ../sass/partials/_colors.scss */
 .navbar-inner {
   background: transparent;
   border: 0;
-  height: 37px;
-  min-height: 37px;
+  height: 36px;
+  min-height: 36px;
 }
-/* line 75, ../sass/partials/_colors.scss */
+/* line 76, ../sass/partials/_colors.scss */
 .navbar-inner .nav {
-  height: 37px;
+  height: 36px;
 }
-/* line 77, ../sass/partials/_colors.scss */
+/* line 78, ../sass/partials/_colors.scss */
 .navbar-inner .nav li {
-  height: 37px;
+  height: 36px;
 }
-/* line 79, ../sass/partials/_colors.scss */
+/* line 80, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a {
-  height: 37px;
-  line-height: 37px;
+  height: 36px;
+  line-height: 36px;
 }
-/* line 82, ../sass/partials/_colors.scss */
+/* line 83, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 85, ../sass/partials/_colors.scss */
+/* line 86, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle b.caret {
   margin-top: 15px;
 }
 
-/* line 96, ../sass/partials/_colors.scss */
+/* line 98, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 98, ../sass/partials/_colors.scss */
+/* line 100, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 100, ../sass/partials/_colors.scss */
+/* line 102, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
-  border-top-color: #555!important;
-  border-bottom-color: #555!important;
+  color: #fff;
 }
-/* line 103, ../sass/partials/_colors.scss */
-li.dropdown a.dropdown-toggle:hover .caret {
-  border-top-color: #555!important;
-  border-bottom-color: #555555 !important;
-}
-/* line 109, ../sass/partials/_colors.scss */
+/* line 108, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 114, ../sass/partials/_colors.scss */
+/* line 113, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 117, ../sass/partials/_colors.scss */
+/* line 116, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }
@@ -9302,6 +9322,18 @@ li.dropdown a ul.dropdown-menu li a {
   text-align: center;
   float: left;
   margin-right: 20px;
+  /*&#sectionC_menu_audio.on a span {
+      background-position:-386px -77px
+  }
+  &#sectionC_menu_share.on a span {
+      background-position:-463px -77px
+  }
+  &#sectionC_menu_comment.on a span {
+      background-position:-540px -77px
+  }
+  &#sectionC_menu_resources.on a span {
+      background-position:-617px -77px
+  }*/
 }
 /* line 48, ../sass/partials/_menu.scss */
 #wrapper #sectionC ul#sectionC_menu li a {
@@ -9323,75 +9355,91 @@ li.dropdown a ul.dropdown-menu li a {
   background-repeat: no-repeat;
 }
 /* line 66, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible a span {
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible:hover a span {
   background-position: -232px 0px;
 }
 /* line 69, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan a span {
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan:hover a span {
   background-position: -309px 0px;
 }
 /* line 72, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio a span {
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio:hover a span {
   background-position: -386px 0px;
 }
 /* line 75, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share a span {
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share:hover a span {
   background-position: -463px 0px;
 }
 /* line 78, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment a span {
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment:hover a span {
   background-position: -540px 0px;
 }
 /* line 81, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources a span {
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources:hover a span {
   background-position: -617px 0px;
 }
-/* line 85, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible.on a span, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible a:hover span {
-  background-position: -232px -77px;
+/* line 84, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible:hover a {
+  color: #9A9895;
 }
-/* line 89, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan.on a span, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan a:hover span {
-  background-position: -309px -77px;
+/* line 87, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan:hover a {
+  color: #9A9895;
+}
+/* line 90, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio:hover a {
+  color: #9A9895;
 }
 /* line 93, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio.on a span, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio a:hover span {
-  background-position: -386px -77px;
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share:hover a {
+  color: #9A9895;
 }
-/* line 97, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share.on a span, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share a:hover span {
-  background-position: -463px -77px;
+/* line 96, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment:hover a {
+  color: #9A9895;
 }
-/* line 101, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment.on a span, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment a:hover span {
-  background-position: -540px -77px;
+/* line 99, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources:hover a {
+  color: #9A9895;
+}
+/* line 102, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible a span {
+  background-position: -232px -154px;
 }
 /* line 105, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources.on a span, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources a:hover span {
-  background-position: -617px -77px;
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan a span {
+  background-position: -309px -154px;
 }
-/* line 109, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible.on a, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible a:hover {
-  color: #f36d4f;
+/* line 108, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio a span {
+  background-position: -386px -154px;
 }
-/* line 113, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan.on a, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan a:hover {
-  color: #f36d4f;
+/* line 111, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share a span {
+  background-position: -463px -154px;
+}
+/* line 114, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment a span {
+  background-position: -540px -154px;
 }
 /* line 117, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio.on a, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_audio a:hover {
-  color: #f36d4f;
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources a span {
+  background-position: -617px -154px;
 }
-/* line 121, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share.on a, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_share a:hover {
-  color: #f36d4f;
+/* line 120, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible.on a span {
+  background-position: -232px -77px;
 }
-/* line 125, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment.on a, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_comment a:hover {
+/* line 123, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan.on a span {
+  background-position: -309px -77px;
+}
+/* line 126, ../sass/partials/_menu.scss */
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_bible.on a {
   color: #f36d4f;
 }
 /* line 129, ../sass/partials/_menu.scss */
-#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources.on a, #wrapper #sectionC ul#sectionC_menu li#sectionC_menu_resources a:hover {
+#wrapper #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan.on a {
   color: #f36d4f;
 }
 

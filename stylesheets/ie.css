@@ -7,30 +7,6 @@
 .lt-ie8 #sectionC {
   height: 500px;
 }
-/* line 10, ../sass/ie.scss */
-.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_bible a span {
-  background: red !important;
-}
-/* line 11, ../sass/ie.scss */
-.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_reading-plan a span {
-  background-position: -309px 0px !important;
-}
-/* line 12, ../sass/ie.scss */
-.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_audio a span {
-  background-position: -386px 0px !important;
-}
-/* line 13, ../sass/ie.scss */
-.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_share a span {
-  background-position: -463px 0px !important;
-}
-/* line 14, ../sass/ie.scss */
-.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_comment a span {
-  background-position: -540px 0px !important;
-}
-/* line 15, ../sass/ie.scss */
-.lt-ie8 #sectionC ul#sectionC_menu li#sectionC_menu_resources a span {
-  background-position: -617px 0px !important;
-}
 
 /* line 19, ../sass/ie.scss */
 .hidden {

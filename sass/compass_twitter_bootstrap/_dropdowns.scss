@@ -1,3 +1,7 @@
+$dropdownBorderColor: #aba39e;
+$activeColor:#d4ccc9;
+$linkBackground:#C8BFBC;
+//
 //
 // Dropdown menus
 // --------------------------------------------------
@@ -49,10 +53,11 @@
   padding: 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
-  background-color: $dropdownBackground;
+ // background-color: $dropdownBackground;
+ background-color:$linkBackground;
   border: 10px solid #ccc; // Fallback for IE7-8
   //border: 10px solid $dropdownBorder;
-  border: 10px solid #ccc;
+  border: 10px solid $dropdownBorderColor;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   @include border-radius(6px);
@@ -67,7 +72,6 @@
     right: 0;
     left: auto;
   }
-
   // Dividers (basically an hr) within the dropdown
   .divider {
     @include nav-divider();
@@ -80,9 +84,18 @@
     clear: both;
     font-weight: normal;
     line-height: $baseLineHeight;
-    color: $dropdownLinkColor;
+    //color: $dropdownLinkColor;
+    color:#fff !important;
     white-space: nowrap;
+    &:hover {
+        background:$dropdownBorderColor;
+    }
   }
+}
+li#readingPlanDropDown {
+    .dropdown-menu {
+        overflow:hidden !important;
+    }
 }
 
 // Hover state
@@ -91,7 +104,7 @@
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   text-decoration: none;
-  background-color:#e5e5e5;
+  background-color:$activeColor;
   //color: $dropdownLinkColorHover;
   //background-color: $dropdownLinkBackgroundHover;
   //@include gradient-vertical($dropdownLinkBackgroundHover, darken($dropdownLinkBackgroundHover, 5%));
@@ -131,6 +144,7 @@
 
   & > .dropdown-menu {
     display: block;
+    top:40px;
   }
 }
 

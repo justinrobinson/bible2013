@@ -5,6 +5,7 @@ $dark-grey: #6f6366;
 $medium-grey: #b7acac;
 $smoke-grey: #9e9693;
 $player-background: #373737;
+$sectionB-down-background: #b9b9b9;
 // text elements
 h1, h3, h4, p, li, .label{
     color:$dark-grey
@@ -70,15 +71,15 @@ h2, .h2 {
 .navbar-inner {
 	background:transparent;
 	border:0;
-	height:37px;
-    min-height:37px;
+	height:36px;
+    min-height:36px;
 	.nav {
-		height:37px;
+		height:36px;
 		li {
-			height:37px;
+			height:36px;
 			a {
-                height:37px;
-                line-height:37px;
+                height:36px;
+                line-height:36px;
 				&.dropdown-toggle {
                     padding-top:0;
                     padding-bottom:0;
@@ -93,16 +94,14 @@ h2, .h2 {
 
 li {
     &.dropdown {
+
         a {
             text-shadow:none!important;
             &.dropdown-toggle {
                 color:#fff;
                 &:hover {
-                    border-top-color:#555!important;
-                    border-bottom-color:#555!important;
+                    color:#fff;
                     .caret {
-                        border-top-color:#555!important;
-                        border-bottom-color:#555!important
                     }
                 }
             }
@@ -118,6 +117,12 @@ li {
                             color:#fff;
                         }
                     }
+                }
+            }
+        }
+        &.open {
+            a {
+                &.dropdown-toggle {
                 }
             }
         }

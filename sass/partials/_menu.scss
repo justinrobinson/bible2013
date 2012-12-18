@@ -63,73 +63,85 @@
                         background-repeat:no-repeat;                        
                     }
                 }
-                &#sectionC_menu_bible a span {
+                &#sectionC_menu_bible:hover a span {
                     background-position:-232px 0px
                 }
-                &#sectionC_menu_reading-plan a span {
+                &#sectionC_menu_reading-plan:hover a span {
                     background-position:-309px 0px
                 }
-                &#sectionC_menu_audio a span {
+                &#sectionC_menu_audio:hover a span {
                     background-position:-386px 0px
                 }
-                &#sectionC_menu_share a span {
+                &#sectionC_menu_share:hover a span {
                     background-position:-463px 0px
                 }
-                &#sectionC_menu_comment a span {
+                &#sectionC_menu_comment:hover a span {
                     background-position:-540px 0px
                 }
-                &#sectionC_menu_resources a span {
+                &#sectionC_menu_resources:hover a span {
                     background-position:-617px 0px
                 }
-                &#sectionC_menu_bible.on a span,
-                &#sectionC_menu_bible a:hover span {
+                &#sectionC_menu_bible:hover a {
+                    color:#9A9895;
+                }
+                &#sectionC_menu_reading-plan:hover a {
+                    color:#9A9895;
+                }
+                &#sectionC_menu_audio:hover a {
+                    color:#9A9895;
+                }
+                &#sectionC_menu_share:hover a {
+                    color:#9A9895;
+                }
+                &#sectionC_menu_comment:hover a {
+                    color:#9A9895;
+                }
+                &#sectionC_menu_resources:hover a {
+                    color:#9A9895;
+                }
+                &#sectionC_menu_bible a span {
+                    background-position:-232px -154px
+                }
+                &#sectionC_menu_reading-plan a span {
+                    background-position:-309px -154px
+                }
+                &#sectionC_menu_audio a span {
+                    background-position:-386px -154px
+                }
+                &#sectionC_menu_share a span {
+                    background-position:-463px -154px
+                }
+                &#sectionC_menu_comment a span {
+                    background-position:-540px -154px
+                }
+                &#sectionC_menu_resources a span {
+                    background-position:-617px -154px
+                }
+                &#sectionC_menu_bible.on a span {
                     background-position:-232px -77px
                 }
-                &#sectionC_menu_reading-plan.on a span,
-                &#sectionC_menu_reading-plan a:hover span {
+                &#sectionC_menu_reading-plan.on a span {
                     background-position:-309px -77px
                 }
-                &#sectionC_menu_audio.on a span,
-                &#sectionC_menu_audio a:hover span {
+                &#sectionC_menu_bible.on a {
+                    color:#f36d4f;
+                }
+                &#sectionC_menu_reading-plan.on a {
+                    color:#f36d4f;
+                }
+
+                /*&#sectionC_menu_audio.on a span {
                     background-position:-386px -77px
                 }
-                &#sectionC_menu_share.on a span,
-                &#sectionC_menu_share a:hover span {
+                &#sectionC_menu_share.on a span {
                     background-position:-463px -77px
                 }
-                &#sectionC_menu_comment.on a span,
-                &#sectionC_menu_comment a:hover span {
+                &#sectionC_menu_comment.on a span {
                     background-position:-540px -77px
                 }
-                &#sectionC_menu_resources.on a span,
-                &#sectionC_menu_resources a:hover span {
+                &#sectionC_menu_resources.on a span {
                     background-position:-617px -77px
-                } 
-                &#sectionC_menu_bible.on a,
-                &#sectionC_menu_bible a:hover {
-                    color:#f36d4f
-                }
-                &#sectionC_menu_reading-plan.on a,
-                &#sectionC_menu_reading-plan a:hover {
-                    color:#f36d4f
-                }
-                &#sectionC_menu_audio.on a, 
-                &#sectionC_menu_audio a:hover {
-                    color:#f36d4f
-                }
-                &#sectionC_menu_share.on a,
-                &#sectionC_menu_share a:hover {
-                    color:#f36d4f
-                }
-                &#sectionC_menu_comment.on a,
-                &#sectionC_menu_comment a:hover {
-                    color:#f36d4f
-                }
-                &#sectionC_menu_resources.on a,
-                &#sectionC_menu_resources a:hover {
-                    color:#f36d4f
-                }
-               
+                }*/ 
             }
         }
     }

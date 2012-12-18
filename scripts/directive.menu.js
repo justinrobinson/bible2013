@@ -4,7 +4,7 @@ bible2012App
 .directive('menu', function($log, $location, config, utilities, $rootScope) {
     return {
         restrict: 'A',
-        template: '<ul ng-transclude><li ng-repeat="i in menuItems" ng-class="{on:i==selected}" id="sectionC_menu_{{i}}"><a ng-click="click(i)"><span></span>{{i}}</a></li></ul>',
+        templateUrl: 'views/menu.html',
         replace: true,
         transclude: true,
         controller: function($scope, $element, $attrs, $routeParams) {
@@ -66,7 +66,7 @@ directive('pane', function(config) {
         transclude: true,
         replace: true,
         scope: {title:'@title',pane:'@pane'},
-        template: '<div class="pane" id="{{title}}_pane" ng-transclude><a class="home" href="" ng-click="click(\'bible\')">Home</a><h2>{{title}}</h2></div>',
+        templateUrl: 'views/pane.html', 
         link: function(scope, element, attrs) {
         },
         controller: function ($log, $rootScope, $scope, $element, $attrs) {

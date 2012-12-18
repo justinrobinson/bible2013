@@ -21,7 +21,7 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
     $scope.ev = config.ev;
     $scope.chapters = utilities.getChapters();
     $scope.verses = utilities.getVerses();
-
+    $scope.passageAvailable = false;
     // Update books with new version index
     $scope.getBooks = function() {
         if (config.currentVersionIndex == null) {
@@ -34,12 +34,15 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
     $scope.getBooks();
 
     $scope.previousChapterClick = function() {
+        $scope.passageAvailable = false;
         utilities.getPreviousBibleChapter();
     };
     $scope.nextChapterClick = function() {
+        $scope.passageAvailable = false;
         utilities.getNextBibleChapter();
     };
     $scope.bookClick = function($index) {
+        $scope.passageAvailable = false;
         $scope.book = config.book = Number($index)+1;
         $scope.bookName = utilities.getBookName();
         $scope.chapters = utilities.getChapters();
@@ -47,6 +50,7 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
         $location.path('bible/' + config.versions[config.version].versionkey + '/' + config.book + '/' + config.sc);
     };
     $scope.chapterClick = function($index) {
+        $scope.passageAvailable = false;
         $scope.sc = config.sc = Number($index)+1;
         $scope.sv = config.sv = 1;
         $location.path('bible/' + config.versions[config.version].versionkey + '/' + config.book + '/' + config.sc);
@@ -72,6 +76,7 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
         })
         .success(function(data) {
             $scope.copyright = data.response.result.CopyrightInfo;
+            $scope.passageAvailable = true;
         })
         .error(function(a, b, c, d) {
             $log.log('BibleCtrl $http copyright error: ', a, b, c, d);

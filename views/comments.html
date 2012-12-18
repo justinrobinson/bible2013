@@ -1,9 +1,21 @@
 <div ng-controller='CommentsCtrl'>
-    <div ng-include src="'views/commentsPager.html'"></div>
-    <span ng-model='comments' ng-repeat='comment in comments'>
-        <h3>{{comment.display_name}}</h3><h4>{{comment.friendly_time}}</h4>
-        <p> {{comment.comment_text}} <!--<a class='profile_img' href='comment.profile_link'><img src='{{comment.profile_img_src}}'/></a>--></p>
-        <hr />
-    </span> 
-    <div ng-include src="'views/commentsPager.html'"></div>
+    <div ng-switch on='commentsAvailable'>
+		<script>
+			document.domain = "cbn.com";
+		</script>
+		<iframe src='http://www.cbn.com/auth/social/Bible2013Logon.aspx' style='height:200px;width:100%;'></iframe>
+		
+        <span ng-switch-when='true'>
+            <div ng-include src="'views/commentsPager.html'"></div>
+            <span ng-model='comments' ng-repeat='comment in comments'>
+                <h3>{{comment.display_name}}</h3><h4>{{comment.friendly_time}}</h4>
+                <p> {{comment.comment_text}} <!--<a class='profile_img' href='comment.profile_link'><img src='{{comment.profile_img_src}}'/></a>--></p>
+                <hr />
+            </span> 
+            <div ng-include src="'views/commentsPager.html'"></div>
+        </span>
+        <span ng-switch-when='false'>
+            <span class='loader'>Loading...</span>
+        </span>
+    </div>
 </div>

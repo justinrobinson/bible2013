@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" id="nd:app"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" id="nd:app"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" id="nd:app"> <![endif]-->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
       <meta charset="utf-8"/>
@@ -42,7 +42,7 @@
         <div id='logo'><h1><a href='/'>Community Bible</a></h1></div>
         <div id='search'>
             <form>
-                <input type='text' placeholder='Enter search terms' ng-model='searchResult' value='{{searchResult}}' ui-keypress="{13:'search($event)'}" ng-controller='SearchCtrl' />
+                <input type='text' placeholder='Enter search terms' ng-model='searchResult' ng-value='{{searchResult}}' ui-keypress="{13:'search($event)'}" ng-controller='SearchCtrl' />
                 <button ng-click="search()"></button>
             </form>
         </div>

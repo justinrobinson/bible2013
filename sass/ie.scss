@@ -7,12 +7,12 @@
     #sectionC {
         height:500px;
         ul#sectionC_menu {
-            li#sectionC_menu_bible a span {background:red !important}
-            li#sectionC_menu_reading-plan a span { background-position:-309px 0px !important;}
-            li#sectionC_menu_audio a span { background-position:-386px 0px !important;}
-            li#sectionC_menu_share a span { background-position:-463px 0px !important;}
-            li#sectionC_menu_comment a span { background-position:-540px 0px !important;}
-            li#sectionC_menu_resources a span { background-position:-617px 0px !important;}
+            li#sectionC_menu_reading-plan {
+                a {
+                    span {
+                    }
+                }
+            }
         }
     }
 }

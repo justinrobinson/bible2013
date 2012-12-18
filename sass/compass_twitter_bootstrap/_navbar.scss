@@ -1,3 +1,4 @@
+$dropdownBorderColor: #aba39e;
 //
 // Navbars (Redux)
 // --------------------------------------------------
@@ -294,8 +295,8 @@
     display: inline-block;
     border-left:   27px solid transparent;
     border-right:  27px solid transparent !important;
-    border-bottom: 27px solid #ccc !important;
-    border-bottom-color: $dropdownBorder;
+    border-bottom: 27px solid $dropdownBorderColor !important;
+    border-bottom-color: $dropdownBorderColor;
     position: absolute;
     top: -27px;
     left: 0px;
@@ -305,7 +306,7 @@
     display: inline-block;
     border-left:   16px solid transparent;
     border-right:  16px solid transparent;
-    border-bottom: 16px solid $dropdownBackground;
+    border-bottom: 16px solid $dropdownBorderColor;
     position: absolute;
     top: -16px;
     left: 10px;
@@ -317,27 +318,32 @@ a.dropdown-toggle::before {
 	display: inline-block;
 	border-left: 27px solid transparent;
 	border-right: 27px solid transparent;
-	border-bottom: 27px solid #CCC;
+	border-bottom: 27px solid $dropdownBorderColor;
 	//border-bottom-color: rgba(0, 0, 0, 0.2);
-    border-bottom-color:#ccc;
+    border-bottom-color:$dropdownBorderColor;
 	position: absolute;
-	bottom: -10px;
+	bottom: -20px;
 	right: 50%;;
     margin-right:-22px;
 	display: none;
 }
+li#bibleChaptersDropDown {
+    a.dropdown-toggle::before {
+        margin-right:-30px !important;
+    }
+}
 a.dropdown-toggle::after {
-	content: '';
+	/*content: '';
 	display: inline-block;
 	border-left: 16px solid transparent;
 	border-right: 16px solid transparent;
-	border-bottom: 16px solid white;
+	border-bottom: 16px solid $dropdownBorderColor;
 	position: absolute;
 	bottom: -12px;
 	right: 50%;
     margin-right:-12px;
 	z-index: 1001;
-	display: none;
+	display: none;*/
 }
 .open > a.dropdown-toggle::before,
 .open > a.dropdown-toggle::after {
@@ -364,18 +370,21 @@ a.dropdown-toggle::after {
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: $navbarLinkBackgroundActive;
-  color: $navbarLinkColorActive;
+  //background-color: $dropdownBorderColor;
+//@include background-image(linear-gradient(#8c8582, #ccc3c0));
+background-color:#8D8583;
+  color: #fff;
+  border-bottom:#000;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: $navbarLinkColor;
-  border-bottom-color: $navbarLinkColor;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: $navbarLinkColorActive;
-  border-bottom-color: $navbarLinkColorActive;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 
 // Right aligned menus need alt position
