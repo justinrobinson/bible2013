@@ -11,6 +11,9 @@ bible2012App.controller('ReadingPlanCtrl', function($location, $rootScope, $scop
     $scope.data = [];
     $scope.plans = ['New and Old Testament', 'New Testament Only'];
     $scope.plan = $scope.plans[Number($scope.planId)-1];
+    $scope.showDatePicker = function() {
+        $('#datePickerDropDown').datepicker('show'); 
+    };
     $scope.planClick = function($index) {
         $location.path('/reading-plan/' + (Number($index) + 1) + '/' + config.day);
     };
@@ -72,4 +75,15 @@ bible2012App.controller('ReadingPlanCtrl', function($location, $rootScope, $scop
     };
     // start everything off
     $scope.update();
+}).
+directive('myDatepicker', function($log, config) {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            $log.log(scope, element, attrs);
+            scope.showDatePicker = function() {
+                $('#readingPlanDatePicker').datepicker('show');
+            };
+        }
+    };
 });

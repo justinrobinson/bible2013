@@ -4,7 +4,6 @@
  */
 bible2012App.factory('config', function($log, apiUrl, searchUrl, bibleAudioUrl, nltIndex, versions, $location, $routeParams) {
     function getCurrentHashRoot() {
-        $log.log('getCurrentHashRoot');
         return $location.path().split('/')[1];
     }
     function getCurrentDayOfYear() {

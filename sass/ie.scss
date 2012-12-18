@@ -6,16 +6,81 @@
 .lt-ie8 {
     #sectionC {
         height:500px;
+        .pane {
+            h2, .home {
+                display:none !important;
+            }
+            &#audio_pane {
+                display:block !important;
+                left:0px !important;
+            }
+        }
         ul#sectionC_menu {
-            li#sectionC_menu_reading-plan {
-                a {
-                    span {
-                    }
-                }
+            li#sectionC_menu_audio,
+            li#sectionC_menu_share,
+            li#sectionC_menu_comment,
+            li#sectionC_menu_resources {
+                display:none 
             }
         }
     }
 }
 .hidden {
     display:none !important;
+}
+.lt-ie9 {
+    #column_wrapper {
+        background:#fff url(../img/ieBackground.gif) repeat-y 100% 0;
+    }
+    #sectionB {
+        z-index:3000000;
+        .navbar {
+            .navbar-inner {
+                .nav {
+                    li {
+                        &#bibleVersionsDropDown {
+                            ul {
+                                width:400px;
+                            }
+                        }
+                        &#bibleBooksDropDown {
+                            ul {
+                                width:200px;
+                                height:300px !important;
+                                padding-top:0 !important;
+                                margin-top:0 !important;
+                            }
+                        }
+                        &#bibleChaptersDropDown {
+                            ul {
+                                width:180px;
+                            }
+                        }
+                        &#readingPlanDropDown {
+                            ul {
+                                width:255px;
+                                height:300px;
+                                overflow:hidden;
+                            }
+                        }
+                        a {
+                            b.caret {
+                                margin-top:5px !important;
+                            }
+                        }
+                    }
+                    .dropdown-menu {
+                        visibility:visible;
+                    }
+                }
+            }
+        }
+    }
+    #sectionD {
+        z-index:1;
+        #passage_pager_previous,
+        #passage_pager_next {
+            margin-top:20px;
+        }
+    }
 }

@@ -369,7 +369,8 @@ a.dropdown-toggle::after {
 // Remove background color from open dropdown
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar #readingPlanDatePicker:active {
   //background-color: $dropdownBorderColor;
 //@include background-image(linear-gradient(#8c8582, #ccc3c0));
 background-color:#8D8583;
