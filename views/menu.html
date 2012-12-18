@@ -1,8 +1,8 @@
  <ul ng-transclude>
      <li id='sectionC_menu_bible' ng-class="{on:'bible'==selected}"><a href ng-click='click("bible")'><span></span>Bible</a></li>
     <li id='sectionC_menu_reading-plan' ng-class="{on:'reading-plan'==selected}"><a href ng-click='click("reading-plan")'><span></span>Reading Plan</a></li>
-    <li id='sectionC_menu_audio' ng-class="{on:'audio'==selected}"><a href ng-click='click("audio")'><span></span>Audio</a></li>
+    <li id='sectionC_menu_audio' ng-class="{on:'audio'==selected, hide:'reading-plan'==current}"><a href ng-click='click("audio")'><span></span>Audio</a></li>
     <li id='sectionC_menu_share' ng-class="{on:'share'==selected}"><a href ng-click='click("share")'><span></span>Share</a></li>
-    <li id='sectionC_menu_comment' ng-class="{on:'comment'==selected}"><a href ng-click='click("comment")'><span></span>Comment</a></li>
+    <li id='sectionC_menu_comment' ng-class="{on:'comment'==selected}, hide:'bible'==current}"><a href ng-click='click("comment")'><span></span>Comment</a></li>
     <li id='sectionC_menu_resources' ng-class="{on:'resources'==selected}"><a href ng-click='click("resources")'><span></span>Resources</a></li>
 </ul>

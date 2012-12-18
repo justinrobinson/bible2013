@@ -382,3 +382,8 @@ body.reading-plan #sectionD {
 .on {
     display:block !important
 }
+#wrapper #sectionC ul#sectionC_menu li {
+    &.hide {
+        display:none !important
+    }
+}

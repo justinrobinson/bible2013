@@ -9088,6 +9088,11 @@ body.reading-plan #sectionD {
   display: block !important;
 }
 
+/* line 386, ../sass/partials/_layout.scss */
+#wrapper #sectionC ul#sectionC_menu li.hide {
+  display: none !important;
+}
+
 @font-face {
   font-family: "lgr";
   src: url('/stylesheets/fonts/../../bible2013/fonts/League_Gothic-webfont.ttf') format('truetype'), url('/stylesheets/fonts/../../bible2013/fonts/League_Gothic-webfont.otf') format('opentype'), url('/stylesheets/fonts/../../bible2013/fonts/League_Gothic-webfont.eot') format('embedded-opentype'), url('/stylesheets/fonts/../../bible2013/fonts/League_Gothic-webfont.svg') format('svg');
