@@ -42,6 +42,11 @@ bible2012App.directive('myJplayer', function($log, $filter, config) {
                     },
                         tracks, 
                     {
+                        playlistOptions: {
+                            addTime: 0,
+                            removeTime: 0,
+                            displayTime: 0
+                        },
                         swfPath: 'swf',
                         supplied: supplied,
                         wmode: wmode
