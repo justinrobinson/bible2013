@@ -42,7 +42,7 @@ bible2012App.directive('myJplayer', function($log, $filter, config) {
                     },
                         tracks, 
                     {
-                        swfPath: '../swf/',
+                        swfPath: 'swf',
                         supplied: supplied,
                         wmode: wmode
                     }

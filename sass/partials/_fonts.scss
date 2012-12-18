@@ -7,13 +7,18 @@ $pnr: $font-path + 'ProximaNova-Reg-webfont';
 @include font-face('lgr', font-files($lgr + '.ttf', $lgr + '.otf', $lgr + '.eot', $lgr + '.svg'));
 @include font-face('pnb', font-files($pnb + '.ttf', $pnb + '.otf', $pnb + '.eot', $pnb + '.svg'));
 @include font-face('pnr', font-files($pnr + '.ttf', $pnr + '.otf', $pnr + '.eot', $pnr + '.svg'));
+* {
+    font-weight:normal;
+}
 h1, .button {
   font-family:'lgr';
   font-size:48px;
+  font-weight:normal;
   text-transform:uppercase;
   a { text-decoration:none; }
 }
 h2, .h2, h3, h4, p, li, strong {
+    font-weight:normal;
   font-family:'pnb';
 }
 p, label, input, li, .icon, .label, .input, .copyright, .passage-copyright {

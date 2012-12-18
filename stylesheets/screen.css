@@ -9109,76 +9109,83 @@ body.reading-plan #sectionD {
 }
 
 /* line 10, ../sass/partials/_fonts.scss */
+* {
+  font-weight: normal;
+}
+
+/* line 13, ../sass/partials/_fonts.scss */
 h1, .button {
   font-family: 'lgr';
   font-size: 48px;
+  font-weight: normal;
   text-transform: uppercase;
 }
-/* line 14, ../sass/partials/_fonts.scss */
+/* line 18, ../sass/partials/_fonts.scss */
 h1 a, .button a {
   text-decoration: none;
 }
 
-/* line 16, ../sass/partials/_fonts.scss */
+/* line 20, ../sass/partials/_fonts.scss */
 h2, .h2, h3, h4, p, li, strong {
+  font-weight: normal;
   font-family: 'pnb';
 }
 
-/* line 19, ../sass/partials/_fonts.scss */
+/* line 24, ../sass/partials/_fonts.scss */
 p, label, input, li, .icon, .label, .input, .copyright, .passage-copyright {
   font-family: 'pnr';
 }
 
-/* line 22, ../sass/partials/_fonts.scss */
+/* line 27, ../sass/partials/_fonts.scss */
 h2, .h2 {
   font-size: 24px;
   text-transform: uppercase;
 }
 
-/* line 26, ../sass/partials/_fonts.scss */
+/* line 31, ../sass/partials/_fonts.scss */
 h3, .input, input {
   font-size: 18px;
 }
 
-/* line 29, ../sass/partials/_fonts.scss */
+/* line 34, ../sass/partials/_fonts.scss */
 h4 {
   font-size: 12px;
 }
 
-/* line 32, ../sass/partials/_fonts.scss */
+/* line 37, ../sass/partials/_fonts.scss */
 p, input, label {
   line-height: 28px;
 }
 
-/* line 35, ../sass/partials/_fonts.scss */
+/* line 40, ../sass/partials/_fonts.scss */
 .icon, .button {
   font-size: 24px;
   text-decoration: none;
 }
 
-/* line 39, ../sass/partials/_fonts.scss */
+/* line 44, ../sass/partials/_fonts.scss */
 p, .label {
   font-size: 14px;
 }
 
-/* line 42, ../sass/partials/_fonts.scss */
+/* line 47, ../sass/partials/_fonts.scss */
 .copyright, .passage-copyright {
   font-size: 10px;
 }
 
-/* line 47, ../sass/partials/_fonts.scss */
+/* line 52, ../sass/partials/_fonts.scss */
 .ui-widget input {
   font-family: 'pnr' !important;
 }
-/* line 48, ../sass/partials/_fonts.scss */
+/* line 53, ../sass/partials/_fonts.scss */
 .ui-widget select {
   font-family: 'pnr' !important;
 }
-/* line 49, ../sass/partials/_fonts.scss */
+/* line 54, ../sass/partials/_fonts.scss */
 .ui-widget textarea {
   font-family: 'pnr' !important;
 }
-/* line 50, ../sass/partials/_fonts.scss */
+/* line 55, ../sass/partials/_fonts.scss */
 .ui-widget button {
   font-family: 'pnr' !important;
 }
