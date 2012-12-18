@@ -8,26 +8,16 @@
                             <li ng-repeat='version in versions'><a href ng-click='versionClick($index)' data-value='{{version.versionkey}}'>{{version.name}}</a></li>
                         </ul>
                     </li>
-                    <!--<li id='bibleBooksDropDown' class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{book|getBookNameFromNumber}} <b class='caret'></b></a>
+                    <li id='bibleBooksDropDown' class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{book|getBookNameFromNumber}} <b class='caret'></b></a>
                         <ul class='dropdown-menu' ng-model='books'>
-                            <li ng-repeat='book in books'><a href ng-click='bookClick($index)'>{{book.bookname}}</a></li>
+                            <li ng-repeat='book in books'><a href ng-click='bookClick($index)'>{{book.name}}</a></li>
                         </ul>
-                    </li>-->
+                    </li>
                     <li id='bibleChaptersDropDown' class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{sc}} <b class='caret'></b></a>
                         <ul class='dropdown-menu' ng-model='chapters'>
                             <li ng-repeat='chapter in chapters'><a href ng-click='chapterClick($index)'>{{chapter}}</a></li>
                         </ul>
                     </li>
-                    <li id='bibleChaptersDropDown' class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{book|getBookNameFromNumber}} <b class='caret'></b></a>
-                        <ul class='dropdown-menu' ng-model='books'>
-                            <li ng-repeat='book in books'><a href ng-click='chapterClick($index)'>{{book.bookname}}</a></li>
-                        </ul>
-                    </li>
-                    <!--<li class='dropdown'><a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{sv}} <b class='caret'></b></a>
-                        <ul class='dropdown-menu' ng-model='verses'>
-                            <li ng-repeat='verse in verses'><a href ng-click='verseClick($index)'>{{verse}}</a></li>
-                        </ul>
-                    </li>-->
                 </ul>
             </div>
         </div>

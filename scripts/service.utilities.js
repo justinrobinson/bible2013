@@ -68,7 +68,7 @@ bible2012App.factory('utilities', function($log, $http, $location, $rootScope, c
         var arr = [];
         for (var key in index) {
             if (index.hasOwnProperty(key)) {
-                arr.push({'bookname': index[key].BookName});
+                arr.push({'name':index[key].BookName});
             }
         }
         return arr;
