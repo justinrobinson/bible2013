@@ -11,33 +11,18 @@
       <meta name="viewport" content="width=device-width"/>
       <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
       <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-      <!--[if IE]>
-      <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-          <![endif]-->
-<style>
-    /* Custom styles to be added to external file before deployment to production. */
-    body {
-        padding-top:60px
-    }
-    .ui-scrollfix {
-        position:fixed;
-        top:50%
-    }
-</style>
+        <!--[if IE]>
+        <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
 <script>
 document.domain = "cbn.com";
-// Resize iframe to full height
-function resizeIframe(height) {
-// "+60" is a general rule of thumb to allow for differences in
-// IE & and FF height reporting, can be adjusted as required..
-document.getElementById('signup').height = parseInt(height)+60;
-}
+function resizeIframe(height) { document.getElementById('signup').height = parseInt(height)+60; }
 </script>
   </head>
   <body id="ng-app" ng-app="bible2012App" class='ng-app:bible2012App {{current}}' ng-controller='AppCtrl'>
 
       <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+      <p class="chromeframe">Old browsers can put your security at risk, are slow and don't work with all of the newer features of the bible. To get the latest that the online bible has to offer, you'll need to update to a modern browser. We suggest you try <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.mozilla.org/firefox">Mozilla Firefox</a>.</p>
           <![endif]-->
 
 <!--[if lt IE 9]>
