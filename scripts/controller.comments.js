@@ -48,6 +48,7 @@ bible2012App.controller('CommentsCtrl', function($http, $scope, $rootScope, $log
         })
         .success(function(data) {
             $log.log('comment data:', data);
+            $scope.textarea = '';
             if (data.article.comments.length > 0) {
                 $scope.commentCount = data.article.comment_count;
                 $scope.comments = data.article.comments;
