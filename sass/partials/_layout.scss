@@ -19,7 +19,14 @@ body {
         background:url(../img/ajax-loader-grey.gif) no-repeat 50% 50%;
     }
     iframe {
-        //overflow:hidden !important;
+
+    }
+    form {
+        padding:20px 20px 0 20px;
+        textarea {
+            width:280px;
+            height:150px;
+        }
     }
 }
 #toolbar {
@@ -390,4 +397,17 @@ body.reading-plan #sectionD {
         display:none !important
     }
 }
-
+.readingPlan {
+    padding-bottom:20px !important;
+}
+.comment {
+    display:block;
+    margin-top:20px;
+    margin-bottom:20px;
+    a.profile_img {
+        width:40px;
+        height:20px;
+        float:left;
+        margin:0 10px 10px 0;
+    }
+}

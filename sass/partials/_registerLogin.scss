@@ -4,6 +4,9 @@
         text-align:left;
         padding:0 20px;
     }
+    p {
+        padding:20px 0 0 0 !important;
+    }
 }
 #register {
     body {
@@ -11,4 +14,12 @@
         text-align:left;
         padding:0 20px;
     }
+
+}
+input#LogonEmail, input#LogonPassword {
+    height:30px !important;
+}
+input#RememberMeCB {
+    float:left;
+    margin-right:5px;
 }
