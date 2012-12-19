@@ -26,6 +26,12 @@
 </style>
 <script>
 document.domain = "cbn.com";
+// Resize iframe to full height
+function resizeIframe(height) {
+// "+60" is a general rule of thumb to allow for differences in
+// IE & and FF height reporting, can be adjusted as required..
+document.getElementById('signup').height = parseInt(height)+60;
+}
 </script>
   </head>
   <body id="ng-app" ng-app="bible2012App" class='ng-app:bible2012App {{current}}' ng-controller='AppCtrl'>
@@ -198,6 +204,7 @@ document.domain = "cbn.com";
 <script src='scripts/directive.menu.js'></script>
 <script src='scripts/directive.audioPlayer.js'></script>
 <script src='scripts/directive.myJplayer.js'></script>
+
 
 <script src='scripts/filters.js'></script>
 
