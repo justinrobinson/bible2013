@@ -10492,30 +10492,52 @@ div.jp-jplayer {
 }
 
 /* @end */
-/* line 2, ../sass/partials/_registerLogin.scss */
+/* line 5, ../sass/partials/_registerLogin.scss */
+.lt-ie9#logon body, .lt-ie9#register body {
+  margin: 0;
+  padding: 0;
+  background: #E1DED8 !important;
+}
+/* line 9, ../sass/partials/_registerLogin.scss */
+.lt-ie9#logon body h3, .lt-ie9#register body h3 {
+  margin: 0;
+  padding: 0;
+}
+/* line 13, ../sass/partials/_registerLogin.scss */
+.lt-ie9#logon body form, .lt-ie9#register body form {
+  padding-left: 20px;
+}
+
+/* line 20, ../sass/partials/_registerLogin.scss */
 #logon body {
-  background: transparent !important;
+  background: #E1DED8 !important;
   text-align: left;
   padding: 0 20px;
 }
-/* line 7, ../sass/partials/_registerLogin.scss */
+/* line 25, ../sass/partials/_registerLogin.scss */
 #logon p {
   padding: 20px 0 0 0 !important;
 }
 
-/* line 12, ../sass/partials/_registerLogin.scss */
+/* line 30, ../sass/partials/_registerLogin.scss */
 #register body {
   background: transparent !important;
   text-align: left;
   padding: 0 20px;
 }
 
-/* line 19, ../sass/partials/_registerLogin.scss */
+/* line 38, ../sass/partials/_registerLogin.scss */
+#logon h3, #register h3 {
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+/* line 43, ../sass/partials/_registerLogin.scss */
 input#LogonEmail, input#LogonPassword {
   height: 30px !important;
 }
 
-/* line 22, ../sass/partials/_registerLogin.scss */
+/* line 46, ../sass/partials/_registerLogin.scss */
 input#RememberMeCB {
   float: left;
   margin-right: 5px;

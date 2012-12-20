@@ -1,20 +1,17 @@
 <div ng-controller='CommentsCtrl'>
     <div ng-switch on='commentsAvailable'>
-        <?php if ($cbn_guid == ""): ?>
-        <iframe id='signup' scrolling="no" src='http://www.cbn.com/auth/social/Bible2013Logon.aspx'></iframe>
-        <?php endif; ?>
-        <?php if ($cbn_guid != ""): ?>
+        <!--<iframe id='signup' scrolling="no" src='http://www.cbn.com/auth/social/Bible2013Logon.aspx'></iframe>-->
         <form>
             <textarea ng-model='textarea' placeholder="Add your comment." ng-class="{disabled:commentsAvailable==false}"></textarea><br />
                 <button class='btn' ng-class="{disabled:commentsAvailable==false}" ng-click='submitComment()'>Submit</button>
         </form>
         <?php endif; ?>
         <hr />
-        <span ng-switch-when='false'>
+        <span>
             <span class='loader'>Loading...</span>
         </span>
-        <span id='commentsBox' ng-switch-when='true'>
-            <div ng-include src="'views/commentsPager.html'"></div>
+        <span id='commentsBox'>
+            <!--<div ng-include src="'views/commentsPager.html'"></div>-->
             <span ng-model='comments' ng-repeat='comment in comments'>
                 <span class='comment'>
                     <h3>{{comment.display_name}}</h3><h4>{{comment.friendly_time}}</h4>
@@ -25,7 +22,7 @@
                 </span>
                 <hr />
             </span> 
-            <div ng-include src="'views/commentsPager.html'"></div>
+            <!--<div ng-include src="'views/commentsPager.html'"></div>-->
         </div>
     </div>
 </div>
