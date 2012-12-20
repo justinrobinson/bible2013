@@ -68,6 +68,7 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
     })
     .success(function(data) {
         $scope.passage = data.response.result;
+        $scope.passageAvailable = true;
     })
     .then(function() {
         // Fetch the new passage copyright

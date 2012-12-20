@@ -66,12 +66,15 @@ body {
 #wrapper #sectionA #search {
     position:absolute;
     top:36px;
-    left:556px;
+    left:554px;
+    width:360px;
+    height:39px;
+    background:url(../img/sprites.png) 0 -451px no-repeat;
 }
 #wrapper #sectionA #search form input,
 #wrapper #sectionA #search form button {
     background:#f6f6f6;
-    border:solid 2px #76716f;
+    border:0;
     height:36px
 }
 #wrapper #sectionA #search form input {
@@ -81,8 +84,8 @@ body {
     text-indent:10px;
     background:transparent;
     border:0;
-    height:27px;
-    line-height:27px;
+    height:30px;
+    line-height:38px;
     cursor:pointer;
 }
 #wrapper #sectionA #search form button {
