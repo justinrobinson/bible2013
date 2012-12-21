@@ -61,6 +61,11 @@ h2, .h2 {
 }
 #sectionD {
     #passage {
+        .on {
+            span, sup {
+                background:#FEF1B5;
+            }
+        }
         blockquote {
             small {
                 color:$dark-grey;

@@ -19,12 +19,8 @@ var bible2012App = angular.module('bible2012App', ['ui'])
                 controller: 'BibleCtrl'
         })
         .when('/bible/:versionKey/:book/:sc/:sv', {
-                templateurl: '../bible2013/views/verse.html',
-                controller: 'BibleVerseCtrl'
-        })
-        .when('/bible/:versionKey/:book/:sc/:sv/:ev', {
-                templateUrl: '../bible2013/views/verseRange.html',
-                controller: 'BibleVerseRangeCtrl'
+                templateUrl: '../bible2013/views/bible.html',
+                controller: 'BibleCtrl'
         })
         .otherwise({
                 redirectTo: '/bible/nlt/43/1'

@@ -24,7 +24,9 @@ bible2012App.controller('BibleVersionsCtrl', function($location, $route, $routeP
         })
         .success(function(data) {
             config.currentVersionIndex = data.response.result;
-            $location.path('bible/' + utilities.getVersionKeyFromNumber(config.version) + '/' + config.book + '/' + config.sc);
+            $log.log('changing versions');
+            $location.path('bible/' + utilities.getVersionKeyFromNumber(config.version) + '/' + config.book + '/' + config.sc + ((config.sv != 0) ? ('/' + config.sv) : ''));
+            $log.log('end changing versions');
         })
         .error(function(a, b, c, d) {
             $log.log('BibleVersionsCtrl $http error:', a, b, c, d);

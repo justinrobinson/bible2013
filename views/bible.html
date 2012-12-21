@@ -30,7 +30,7 @@
     <div id='passage_pager_previous'> <a href ng-click='previousChapterClick()'><span></span>Previous</a></div>
     <div id='passage'>
         <h1>{{book|getBookNameFromNumber}} {{sc}}</h1>
-        <span ng-repeat='verse in passage' ng-class='{on:verse.Verse==sv||verse.Verse<=ev}'><sup ng-bind='verse.Verse'></sup><span ng-bind-html-unsafe='verse.VerseText'></span></span><!-- using ng-bind-html-unsafe to escape HTML markup sent in the json data -->
+        <span ng-repeat='verse in passage' ng-class='{on:verseOn(verse.Verse)==true}'><sup ng-bind='verse.Verse'></sup><span ng-bind-html-unsafe='verse.VerseText'></span></span><!-- using ng-bind-html-unsafe to escape HTML markup sent in the json data -->
         <span ng-bind-html-unsafe='copyright'></span>
         <div id='passage_pager_next'><a href ng-click='nextChapterClick()'><span></span>Next</a>
         </div>

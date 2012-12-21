@@ -12,8 +12,56 @@
  */
 bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $routeParams, $rootScope, config, utilities) {
     // Update global configuration settings
-    config.update({version: utilities.getVersionNumberFromKey($routeParams.versionKey), book: $routeParams.book, sc: $routeParams.sc});
-    $rootScope.$broadcast('bibleUpdated', [{'version': config.version, 'book': config.book, 'chapter': config.sc}]);
+    // Check to see if it's a verse range with a dash
+    var sv, ev, startVerse, endVerse;
+    sv = $routeParams.sv || 0;
+    ev = $routeParams.ev || 0;
+    startVerse = 0;
+    endVerse = 0;
+    $log.log('sv:', sv);
+    if (!!~$routeParams.sv.indexOf(',') || !!~$routeParams.sv.indexOf('-')) {
+        if (!!~$routeParams.sv.indexOf(',')) {
+            sv = sv.split(',');
+        }
+        $log.log('sv:', sv);
+        if (!!~$routeParams.sv.indexOf('-')) {
+            if (angular.isArray(sv)) {
+                angular.forEach(sv, function(value, key) {
+                    sv[key] = sv[key].split('-');
+                });
+            } else {
+                sv = sv.split('-');
+            }
+        }
+        $log.log('sv:', sv);
+        if (angular.isArray(sv)) {
+            if (angular.isArray(sv[0])) {
+                startVerse = sv[0][0];
+            } else {
+                startVerse = sv[0];
+            }
+            if (angular.isArray(sv[sv.length-1])) {
+                endVerse = sv[sv.length-1][sv[sv.length-1].length-1];
+            } else {
+                endVerse = sv[sv.length-1];
+            }
+        }
+    } else {
+        startVerse = sv;
+        endVerse = sv;
+    }
+    $log.log('sv:', sv);
+    $log.log('startVerse:', startVerse, 'endVerse:', endVerse);
+    config.update({version: utilities.getVersionNumberFromKey($routeParams.versionKey), book: $routeParams.book, sc: $routeParams.sc, sv: startVerse, ev: endVerse});
+    $scope.verseOn = function(verse) {
+        var bool = false,
+            verse = Number(verse);
+        if (verse >= Number(startVerse) && verse <= Number(endVerse)) {
+            bool = true;
+        }
+        return bool;
+    };
+    $rootScope.$broadcast('bibleUpdated', [{'version': config.version, 'book': config.book, 'chapter': config.sc, 'sv': config.sv}]);
     $scope.book = config.book;
     //$scope.bookName = utilities.getBookName();
     $scope.sc = config.sc;
@@ -30,7 +78,6 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
             return;
         }
         $scope.books = utilities.getBooks();
-        $log.log('$scope.books', $scope.books);
     }
     // Used for initial load
     $scope.getBooks();
@@ -58,8 +105,8 @@ bible2012App.controller('BibleCtrl', function($log, $scope, $http, $location, $r
         $location.path('bible/' + config.versions[config.version].versionkey + '/' + config.book + '/' + config.sc);
     };
     $scope.verseClick = function($index) {
-        $log.log('BibleCtrl verseClick:', $index);
     };
+    $log.log('passage:', config.book, config.sc, config.sv);
     // Fetch the new passage
     $http({
         method: 'GET',

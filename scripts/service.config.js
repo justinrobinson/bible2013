@@ -18,8 +18,8 @@ bible2012App.factory('config', function($log, apiUrl, searchUrl, bibleAudioUrl, 
         versionKey: 'nlt', /** Bible Version Key */
         book: 43, /** Bible Book Number */
         sc: 1, /** Bible Chapter Number */
-        sv: 1, /** Bible Starting Verse Number */
-        ev: 5, /** Bible Ending Verse Number */
+        sv: 0, /** Bible Starting Verse Number */
+        ev: 0, /** Bible Ending Verse Number */
         planId: 1, /** Reading Plan Default Plan ID */
         day: getCurrentDayOfYear(),
         today: function() {
