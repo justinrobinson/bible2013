@@ -8584,67 +8584,71 @@ h2, .h2 {
 }
 
 /* line 65, ../sass/partials/_colors.scss */
+#sectionD #passage .on span, #sectionD #passage .on sup {
+  background: #FEF1B5;
+}
+/* line 70, ../sass/partials/_colors.scss */
 #sectionD #passage blockquote small {
   color: #6f6366;
 }
 
-/* line 71, ../sass/partials/_colors.scss */
+/* line 76, ../sass/partials/_colors.scss */
 .navbar-inner {
   background: transparent;
   border: 0;
   height: 36px;
   min-height: 36px;
 }
-/* line 76, ../sass/partials/_colors.scss */
+/* line 81, ../sass/partials/_colors.scss */
 .navbar-inner .nav {
   height: 36px;
 }
-/* line 78, ../sass/partials/_colors.scss */
+/* line 83, ../sass/partials/_colors.scss */
 .navbar-inner .nav li {
   height: 36px;
 }
-/* line 80, ../sass/partials/_colors.scss */
+/* line 85, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a {
   height: 36px;
   line-height: 36px;
 }
-/* line 83, ../sass/partials/_colors.scss */
+/* line 88, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 86, ../sass/partials/_colors.scss */
+/* line 91, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle b.caret {
   margin-top: 15px;
 }
 
-/* line 98, ../sass/partials/_colors.scss */
+/* line 103, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 100, ../sass/partials/_colors.scss */
+/* line 105, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 102, ../sass/partials/_colors.scss */
+/* line 107, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
   color: #fff;
 }
-/* line 108, ../sass/partials/_colors.scss */
+/* line 113, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 113, ../sass/partials/_colors.scss */
+/* line 118, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 116, ../sass/partials/_colors.scss */
+/* line 121, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }
 
-/* line 131, ../sass/partials/_colors.scss */
+/* line 136, ../sass/partials/_colors.scss */
 hr {
   color: #6f6366;
   background-color: #6f6366;
@@ -9294,67 +9298,71 @@ h2, .h2 {
 }
 
 /* line 65, ../sass/partials/_colors.scss */
+#sectionD #passage .on span, #sectionD #passage .on sup {
+  background: #FEF1B5;
+}
+/* line 70, ../sass/partials/_colors.scss */
 #sectionD #passage blockquote small {
   color: #6f6366;
 }
 
-/* line 71, ../sass/partials/_colors.scss */
+/* line 76, ../sass/partials/_colors.scss */
 .navbar-inner {
   background: transparent;
   border: 0;
   height: 36px;
   min-height: 36px;
 }
-/* line 76, ../sass/partials/_colors.scss */
+/* line 81, ../sass/partials/_colors.scss */
 .navbar-inner .nav {
   height: 36px;
 }
-/* line 78, ../sass/partials/_colors.scss */
+/* line 83, ../sass/partials/_colors.scss */
 .navbar-inner .nav li {
   height: 36px;
 }
-/* line 80, ../sass/partials/_colors.scss */
+/* line 85, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a {
   height: 36px;
   line-height: 36px;
 }
-/* line 83, ../sass/partials/_colors.scss */
+/* line 88, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle {
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 86, ../sass/partials/_colors.scss */
+/* line 91, ../sass/partials/_colors.scss */
 .navbar-inner .nav li a.dropdown-toggle b.caret {
   margin-top: 15px;
 }
 
-/* line 98, ../sass/partials/_colors.scss */
+/* line 103, ../sass/partials/_colors.scss */
 li.dropdown a {
   text-shadow: none!important;
 }
-/* line 100, ../sass/partials/_colors.scss */
+/* line 105, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle {
   color: #fff;
 }
-/* line 102, ../sass/partials/_colors.scss */
+/* line 107, ../sass/partials/_colors.scss */
 li.dropdown a.dropdown-toggle:hover {
   color: #fff;
 }
-/* line 108, ../sass/partials/_colors.scss */
+/* line 113, ../sass/partials/_colors.scss */
 li.dropdown a .caret {
   border-top-color: #fff!important;
   border-bottom-color: white !important;
 }
-/* line 113, ../sass/partials/_colors.scss */
+/* line 118, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu {
   border: solid 20px #555;
 }
-/* line 116, ../sass/partials/_colors.scss */
+/* line 121, ../sass/partials/_colors.scss */
 li.dropdown a ul.dropdown-menu li a {
   color: #fff;
 }
 
-/* line 131, ../sass/partials/_colors.scss */
+/* line 136, ../sass/partials/_colors.scss */
 hr {
   color: #6f6366;
   background-color: #6f6366;
